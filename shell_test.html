@@ -10,23 +10,30 @@
 <title>SHELL TEST</title>
 <style>
   body{font-family:sans-serif;background:#0c1015;color:#e8eaed;margin:0;padding:16px;}
-  #stamp{font-size:28px;font-weight:bold;color:#ffd700;padding:12px;border:2px solid #ffd700;border-radius:8px;text-align:center;margin-bottom:12px;}
-  #status{font-size:13px;color:#9aa0a6;}
+  #boot{font-size:13px;color:#9aa0a6;margin-bottom:12px;}
+  #app{border:2px solid #ffd700;border-radius:8px;padding:12px;min-height:80px;}
 </style>
 </head>
 <body>
-<div id="stamp">読込中…</div>
-<div id="status">起動時刻: <span id="boot"></span></div>
+<div id="boot">起動時刻: <span id="t"></span></div>
+<div id="app">読込中…</div>
 <script>
-  document.getElementById("boot").textContent = new Date().toLocaleTimeString("ja-JP");
-  var url = "probe.txt?_=" + Date.now();
-  fetch(url, {cache:"no-store"})
+  document.getElementById("t").textContent = new Date().toLocaleTimeString("ja-JP");
+  fetch("probe_body.html?_=" + Date.now(), {cache:"no-store"})
     .then(function(r){ return r.text(); })
     .then(function(html){
-      document.getElementById("stamp").textContent = "中身: " + html.trim();
+      var app = document.getElementById("app");
+      app.innerHTML = html;
+      var olds = app.querySelectorAll("script");
+      for (var i=0; i<olds.length; i++){
+        var s = document.createElement("script");
+        if (olds[i].src){ s.src = olds[i].src; }
+        else { s.textContent = olds[i].textContent; }
+        olds[i].parentNode.replaceChild(s, olds[i]);
+      }
     })
     .catch(function(e){
-      document.getElementById("stamp").textContent = "取得失敗: " + e;
+      document.getElementById("app").textContent = "取得失敗: " + e;
     });
 </script>
 </body>

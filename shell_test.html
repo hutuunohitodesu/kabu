@@ -19,7 +19,7 @@
 <div id="app">読込中…</div>
 <script>
   document.getElementById("t").textContent = new Date().toLocaleTimeString("ja-JP");
-  fetch("probe_body.html?_=" + Date.now(), {cache:"no-store"})
+  fetch("probe_full.html?_=" + Date.now(), {cache:"no-store"})
     .then(function(r){ return r.text(); })
     .then(function(html){
       var app = document.getElementById("app");

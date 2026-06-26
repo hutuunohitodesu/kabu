@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SHELLTEST">
+<title>SHELL TEST</title>
+<style>
+  body{font-family:sans-serif;background:#0c1015;color:#e8eaed;margin:0;padding:16px;}
+  #stamp{font-size:28px;font-weight:bold;color:#ffd700;padding:12px;border:2px solid #ffd700;border-radius:8px;text-align:center;margin-bottom:12px;}
+  #status{font-size:13px;color:#9aa0a6;}
+</style>
+</head>
+<body>
+<div id="stamp">読込中…</div>
+<div id="status">起動時刻: <span id="boot"></span></div>
+<script>
+  document.getElementById("boot").textContent = new Date().toLocaleTimeString("ja-JP");
+  var url = "latest_dashboard.html?_=" + Date.now();
+  fetch(url, {cache:"no-store"})
+    .then(function(r){ return r.text(); })
+    .then(function(html){
+      var m = html.match(/2026-06-2[0-9] [0-9]{2}:[0-9]{2}/g);
+      var stamp = m ? m[m.length-1] : "(時刻マーカー無し)";
+      document.getElementById("stamp").textContent = "中身の最新時刻: " + stamp;
+    })
+    .catch(function(e){
+      document.getElementById("stamp").textContent = "取得失敗: " + e;
+    });
+</script>
+</body>
+</html>

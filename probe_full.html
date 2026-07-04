@@ -1,0 +1,17 @@
+<!doctype html><html lang="ja"><head>
+<meta charset="utf-8">
+<title>probe full</title>
+<style>
+  .styled-box{background:#1a3a1a;color:#7fff7f;border:3px solid #7fff7f;border-radius:10px;padding:16px;font-size:18px;}
+  .styled-btn{background:#003300;color:#7fff7f;border:2px solid #7fff7f;padding:10px 20px;font-size:16px;border-radius:6px;}
+</style></head><body>
+<div class="styled-box">このボックスが緑枠・緑文字なら、完全HTML注入でCSSが効いている</div>
+<button id="fb" class="styled-btn">押すと変化</button>
+<script>
+  document.getElementById("fb").addEventListener("click", function(){
+    this.textContent = "完全HTML内のJSも動作OK";
+    this.style.background = "#7fff7f";
+    this.style.color = "#003300";
+  });
+</script>
+</body></html>

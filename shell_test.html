@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SHELLTEST">
+<title>SHELL TEST</title>
+<style>
+  body{font-family:sans-serif;background:#0c1015;color:#e8eaed;margin:0;padding:16px;}
+  #boot{font-size:13px;color:#9aa0a6;margin-bottom:12px;}
+  #app{border:2px solid #ffd700;border-radius:8px;padding:12px;min-height:80px;}
+</style>
+</head>
+<body>
+<div id="boot">起動時刻: <span id="t"></span></div>
+<div id="app">読込中…</div>
+<script>
+  document.getElementById("t").textContent = new Date().toLocaleTimeString("ja-JP");
+  fetch("probe_full.html?_=" + Date.now(), {cache:"no-store"})
+    .then(function(r){ return r.text(); })
+    .then(function(html){
+      var app = document.getElementById("app");
+      app.innerHTML = html;
+      var olds = app.querySelectorAll("script");
+      for (var i=0; i<olds.length; i++){
+        var s = document.createElement("script");
+        if (olds[i].src){ s.src = olds[i].src; }
+        else { s.textContent = olds[i].textContent; }
+        olds[i].parentNode.replaceChild(s, olds[i]);
+      }
+    })
+    .catch(function(e){
+      document.getElementById("app").textContent = "取得失敗: " + e;
+    });
+</script>
+</body>
+</html>

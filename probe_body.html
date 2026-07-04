@@ -1,0 +1,9 @@
+<div id="msg" style="font-size:20px;color:#7fdfff;padding:10px;">JS未実行（このまま変わらなければ失敗）</div>
+<button id="btn" style="font-size:18px;padding:10px 20px;">押すと色が変わる</button>
+<script>
+  document.getElementById("msg").textContent = "JS実行OK（このテキストはJSが書いた）";
+  document.getElementById("btn").addEventListener("click", function(){
+    document.getElementById("btn").style.background = "#ffd700";
+    document.getElementById("btn").textContent = "クリック動作OK";
+  });
+</script>

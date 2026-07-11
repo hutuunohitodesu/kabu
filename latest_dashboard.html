@@ -337,7 +337,2759 @@ section.pane{scroll-margin-top:56px;margin-bottom:28px;}.subpane{scroll-margin-t
 .dr-mainrow-chg{font-size:13px;font-weight:500}
 .dr-badge-volume-surge{display:inline-flex;align-items:center;gap:3px;font-size:11px;padding:3px 10px;border-radius:99px;font-weight:500;background:rgba(251,191,36,.18);color:var(--volume);border:1px solid rgba(251,191,36,.5)}
 .dr-badge-turnover-concentration{display:inline-flex;align-items:center;gap:3px;font-size:11px;padding:3px 10px;border-radius:99px;font-weight:500;background:rgba(212,175,55,.18);color:#e8cd7a;border:1px solid rgba(212,175,55,.5)}
-</style><div class="dr-date-selector"><span class="dr-meta">日次データ</span><select id="dr-date-select" onchange="drSwitchDate(this.value)"><option value="2026-07-07" selected>2026-07-07</option><option value="2026-07-06">2026-07-06</option></select></div><div class="dr-date" data-date="2026-07-07" style="display:block"><div class="dr-tabs dr-tabs-group"><a class="dr-tab active" data-drgroup="price_volume" href="javascript:void(0)">価格・出来高系</a><a class="dr-tab " data-drgroup="updown" href="javascript:void(0)">上下落率系</a><a class="dr-tab " data-drgroup="stop" href="javascript:void(0)">スト高安系</a><a class="dr-tab " data-drgroup="sector" href="javascript:void(0)">業種別</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="price_volume" style="display:block"><a class="dr-tab active" data-drsub="kakkyo" style="--tab-color:#ec4899;--tab-dark:#831843" href="javascript:void(0)">活況銘柄</a><a class="dr-tab " data-drsub="dekidaka" style="--tab-color:#fbbf24;--tab-dark:#78350f" href="javascript:void(0)">出来高</a><a class="dr-tab " data-drsub="baibaidaka" style="--tab-color:#d4af37;--tab-dark:#5c4a0a" href="javascript:void(0)">売買代金</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="updown" style="display:none"><a class="dr-tab " data-drsub="joushouritsu" style="--tab-color:var(--buy);--tab-dark:#065f46" href="javascript:void(0)">上昇率</a><a class="dr-tab " data-drsub="gerakuritsu" style="--tab-color:var(--avoid);--tab-dark:#7f1d1d" href="javascript:void(0)">下落率</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="stop" style="display:none"><a class="dr-tab " data-drsub="stop_high" style="--tab-color:var(--buy);--tab-dark:#065f46" href="javascript:void(0)">ストップ高</a><a class="dr-tab " data-drsub="stop_low" style="--tab-color:var(--avoid);--tab-dark:#7f1d1d" href="javascript:void(0)">ストップ安</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="sector" style="display:none"><a class="dr-tab " data-drsub="sector_index" style="--tab-color:#a78bfa;--tab-dark:#4c1d95" href="javascript:void(0)">業種別騰落</a></div><div class="dr-pane" data-drpane="kakkyo" style="display:block"><div class="dr-comment">本日の活況上位は半導体・AI関連の全面安が突出。キオクシア-11.3%、SUMCO-11.6%、太陽誘電-11.0%、コクサイエレ-9.1%、村田製-10.1%、ローム-7.3%、安川電-7.4%、レーザーテック-6.4%と、装置・部材・電子部品まで広範囲に売られており、単一銘柄要因ではなく地合い悪化型のセクター調整とみられる。前日の米半導体株（SOX等）安を受けた連想売りの可能性が高く、翌日の海外市況確認が必須。
+</style><div class="dr-date-selector"><span class="dr-meta">日次データ</span><select id="dr-date-select" onchange="drSwitchDate(this.value)"><option value="2026-07-10" selected>2026-07-10</option><option value="2026-07-07">2026-07-07</option><option value="2026-07-06">2026-07-06</option></select></div><div class="dr-date" data-date="2026-07-10" style="display:block"><div class="dr-tabs dr-tabs-group"><a class="dr-tab active" data-drgroup="price_volume" href="javascript:void(0)">価格・出来高系</a><a class="dr-tab " data-drgroup="updown" href="javascript:void(0)">上下落率系</a><a class="dr-tab " data-drgroup="stop" href="javascript:void(0)">スト高安系</a><a class="dr-tab " data-drgroup="sector" href="javascript:void(0)">業種別</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="price_volume" style="display:block"><a class="dr-tab active" data-drsub="kakkyo" style="--tab-color:#ec4899;--tab-dark:#831843" href="javascript:void(0)">活況銘柄</a><a class="dr-tab " data-drsub="dekidaka" style="--tab-color:#fbbf24;--tab-dark:#78350f" href="javascript:void(0)">出来高</a><a class="dr-tab " data-drsub="baibaidaka" style="--tab-color:#d4af37;--tab-dark:#5c4a0a" href="javascript:void(0)">売買代金</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="updown" style="display:none"><a class="dr-tab " data-drsub="joushouritsu" style="--tab-color:var(--buy);--tab-dark:#065f46" href="javascript:void(0)">上昇率</a><a class="dr-tab " data-drsub="gerakuritsu" style="--tab-color:var(--avoid);--tab-dark:#7f1d1d" href="javascript:void(0)">下落率</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="stop" style="display:none"><a class="dr-tab " data-drsub="stop_high" style="--tab-color:var(--buy);--tab-dark:#065f46" href="javascript:void(0)">ストップ高</a><a class="dr-tab " data-drsub="stop_low" style="--tab-color:var(--avoid);--tab-dark:#7f1d1d" href="javascript:void(0)">ストップ安</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="sector" style="display:none"><a class="dr-tab " data-drsub="sector_index" style="--tab-color:#a78bfa;--tab-dark:#4c1d95" href="javascript:void(0)">業種別騰落</a></div><div class="dr-pane" data-drpane="kakkyo" style="display:block"><div class="dr-comment">半導体・AI関連の存在感が際立つ一日。ランキング上位30銘柄のうち約3分の1が半導体・電子部品セクター（キオクシア、村田製、フジクラ、JX金属、SUMCO、ローツェ、ソシオネクスト、ルネサス、コクサイエレ、アドテスト、TDK、東エレク）で占められ、地合いの主導役が明確。特にSUMCOはストップ高＋15.40%と突出しており、シリコンウェハー・半導体材料への強い物色が入った。ソシオネクスト＋7.00%、住友電＋7.54%も高い伸び率で、AI・データセンター向け半導体・電線需要への期待が反映されている可能性が高い。
+
+自動車株も物色対象で、三菱自が＋9.44%と急伸したほか日産自＋1.97%も続伸。一方でトヨタは横ばい、キオクシア・ルネサスは小幅安と、セクター内でも銘柄選別が働いている。ソフトバンクグループ＋10.65%は約定回数2位と非常に厚い商いを伴っており、AI投資関連の思惑買いが継続している様子がうかがえる。
+
+全体として、AI・半導体・電線という「AI投資インフラ」テーマへの資金集中が鮮明な一日。個別の急騰銘柄（SUMCO、ソシオネクスト、住友電、三菱自）については材料の裏付け（IR・ニュース）確認が必要で、出来高を伴わない追随高には警戒したい。翌営業日は上記急騰銘柄の値持ちと、半導体セクター全体の資金流入継続を確認したい。
+</div><div class="dr-card-grid">
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">1</span>
+        <span class="dr-name">キオクシア</span>
+        <span class="dr-code">285A・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">177,305回</span>
+      <span class="dr-price">77,000円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.10%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=285A" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">2</span>
+        <span class="dr-name">ＳＢＧ</span>
+        <span class="dr-code">9984・情報･通信業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">146,370回</span>
+      <span class="dr-price">6,370円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+10.65%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9984" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">3</span>
+        <span class="dr-name">村田製</span>
+        <span class="dr-code">6981・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">126,400回</span>
+      <span class="dr-price">9,860円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+4.06%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6981" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">4</span>
+        <span class="dr-name">フジクラ</span>
+        <span class="dr-code">5803・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">103,100回</span>
+      <span class="dr-price">5,150円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+4.29%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5803" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">5</span>
+        <span class="dr-name">太陽誘電</span>
+        <span class="dr-code">6976・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">76,412回</span>
+      <span class="dr-price">14,730円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.34%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6976" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">6</span>
+        <span class="dr-name">住友電</span>
+        <span class="dr-code">5802・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">58,914回</span>
+      <span class="dr-price">2,582円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+7.54%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5802" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">7</span>
+        <span class="dr-name">ＪＸ金属</span>
+        <span class="dr-code">5016・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">50,439回</span>
+      <span class="dr-price">3,962円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+2.38%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5016" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">8</span>
+        <span class="dr-name">三菱自</span>
+        <span class="dr-code">7211・輸送用機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">45,384回</span>
+      <span class="dr-price">361.8円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+9.44%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7211" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">9</span>
+        <span class="dr-name">ローツェ</span>
+        <span class="dr-code">6323・機械・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">38,361回</span>
+      <span class="dr-price">4,655円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.50%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6323" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">10</span>
+        <span class="dr-name">ソシオネクス</span>
+        <span class="dr-code">6526・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">35,878回</span>
+      <span class="dr-price">2,850円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+7.00%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6526" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">11</span>
+        <span class="dr-name">ルネサス</span>
+        <span class="dr-code">6723・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">34,561回</span>
+      <span class="dr-price">4,762円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.14%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6723" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">12</span>
+        <span class="dr-name">古河電</span>
+        <span class="dr-code">5801・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">32,704回</span>
+      <span class="dr-price">3,725円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+5.14%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5801" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">13</span>
+        <span class="dr-name">イビデン</span>
+        <span class="dr-code">4062・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">27,834回</span>
+      <span class="dr-price">20,300円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+4.00%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4062" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">14</span>
+        <span class="dr-name">コクサイエレ</span>
+        <span class="dr-code">6525・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">27,119回</span>
+      <span class="dr-price">10,840円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.28%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6525" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">15</span>
+        <span class="dr-name">東電ＨＤ</span>
+        <span class="dr-code">9501・電気･ガス業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">24,642回</span>
+      <span class="dr-price">480.4円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.27%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9501" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">16</span>
+        <span class="dr-name">川重</span>
+        <span class="dr-code">7012・輸送用機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">24,221回</span>
+      <span class="dr-price">2,779.5円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.20%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7012" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">17</span>
+        <span class="dr-name">ＴＤＫ</span>
+        <span class="dr-code">6762・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">23,532回</span>
+      <span class="dr-price">3,389円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.21%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6762" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">18</span>
+        <span class="dr-name">アドテスト</span>
+        <span class="dr-code">6857・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">21,717回</span>
+      <span class="dr-price">29,830円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+2.30%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6857" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">19</span>
+        <span class="dr-name">ＩＨＩ</span>
+        <span class="dr-code">7013・機械・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">21,208回</span>
+      <span class="dr-price">2,810.5円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.09%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7013" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">20</span>
+        <span class="dr-name">安川電</span>
+        <span class="dr-code">6506・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">20,980回</span>
+      <span class="dr-price">6,972円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+2.29%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6506" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">21</span>
+        <span class="dr-name">楽天グループ</span>
+        <span class="dr-code">4755・サービス業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">20,875回</span>
+      <span class="dr-price">803.2円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.43%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4755" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">22</span>
+        <span class="dr-name">パナＨＤ</span>
+        <span class="dr-code">6752・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">19,786回</span>
+      <span class="dr-price">4,480円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.56%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6752" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">23</span>
+        <span class="dr-name">ＮＴＴ</span>
+        <span class="dr-code">9432・情報･通信業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">19,363回</span>
+      <span class="dr-price">147.6円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.94%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9432" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">24</span>
+        <span class="dr-name">三菱重</span>
+        <span class="dr-code">7011・機械・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">19,315回</span>
+      <span class="dr-price">3,818円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.34%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7011" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">25</span>
+        <span class="dr-name">日産自</span>
+        <span class="dr-code">7201・輸送用機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">19,042回</span>
+      <span class="dr-price">310.5円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.97%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7201" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">26</span>
+        <span class="dr-name">トヨタ</span>
+        <span class="dr-code">7203・輸送用機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">18,704回</span>
+      <span class="dr-price">2,823円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.04%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7203" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">27</span>
+        <span class="dr-name">セブン＆アイ</span>
+        <span class="dr-code">3382・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">18,500回</span>
+      <span class="dr-price">2,021.5円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.37%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=3382" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">28</span>
+        <span class="dr-name">信越化</span>
+        <span class="dr-code">4063・化学・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">17,831回</span>
+      <span class="dr-price">7,320円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+4.42%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4063" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#ec4899,#a78bfa)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#ec4899;color:#831843">29</span>
+        <span class="dr-name">東エレク</span>
+        <span class="dr-code">8035・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#ec4899">16,691回</span>
+      <span class="dr-price">72,940円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+2.65%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8035" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+</div></div><div class="dr-pane" data-drpane="dekidaka" style="display:none"><div class="dr-comment">トップはNTTの1.98億株で、TOPIX Core30構成銘柄として日常的に商いが厚い定番銘柄。ただし株価はほぼ横ばい（-0.94%）で方向感のある売買ではなく、指数連動・機関投資家のリバランス的な出来高とみられる。2位ソフトバンクグループは＋10.65%・出来高7,226万株と、上昇を伴う実需的な資金流入。ソフトバンク（携帯）も7,003万株と厚いが株価は下落しており、通信2社は対照的な値動き。
+
+活況銘柄と重なる形で半導体・電子部品セクター（フジクラ、キオクシア、村田製、住友電、JX金属、太陽誘電、SUMCO、ソシオネクスト）が上位に並び、AI・データセンター関連への資金集中が出来高面でも裏付けられた。ジャパンディスプレイは出来高4,919万株・+4.00%と、時価総額の割に極めて高い回転率で、値がさでない銘柄への投機的な資金流入が見て取れる。三菱自動車も6,304万株と厚商いを伴う急伸（+9.44%）で、単発の思惑ではなく実需を伴う買いの可能性がある。
+
+三菱UFJ・トヨタ・日本製鉄など主力株も高水準の出来高だが株価はほぼ横ばい〜小幅安で、値動きを伴わない出来高は指数リバランスやオプション絡みの需給要因も考えられる。総じて、値上がりを伴う出来高上位（SBG、フジクラ、村田製、住友電、SUMCO、ソシオネクスト、三菱自、Jディスプレイ）が本日の実質的な物色対象と判断できる。
+</div><div class="dr-card-grid">
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">1</span>
+        <span class="dr-name">ＮＴＴ</span>
+        <span class="dr-code">9432・情報･通信業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">197,882,500株</span>
+      <span class="dr-price">147.6円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.94%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-volume-surge"><i class="ti ti-bolt" aria-hidden="true"></i> 出来高上位10</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9432" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">2</span>
+        <span class="dr-name">ＳＢＧ</span>
+        <span class="dr-code">9984・情報･通信業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">72,262,000株</span>
+      <span class="dr-price">6,370円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+10.65%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-volume-surge"><i class="ti ti-bolt" aria-hidden="true"></i> 出来高上位10</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9984" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">3</span>
+        <span class="dr-name">ＳＢ</span>
+        <span class="dr-code">9434・情報･通信業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">70,035,100株</span>
+      <span class="dr-price">211.4円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.40%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-volume-surge"><i class="ti ti-bolt" aria-hidden="true"></i> 出来高上位10</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9434" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">4</span>
+        <span class="dr-name">三菱自</span>
+        <span class="dr-code">7211・輸送用機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">63,040,900株</span>
+      <span class="dr-price">361.8円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+9.44%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-volume-surge"><i class="ti ti-bolt" aria-hidden="true"></i> 出来高上位10</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7211" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">5</span>
+        <span class="dr-name">ソニーＦＧ</span>
+        <span class="dr-code">8729・保険業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">49,878,600株</span>
+      <span class="dr-price">149.3円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.01%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-volume-surge"><i class="ti ti-bolt" aria-hidden="true"></i> 出来高上位10</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8729" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">6</span>
+        <span class="dr-name">Ｊディスプレ</span>
+        <span class="dr-code">6740・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">49,186,900株</span>
+      <span class="dr-price">52円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+4.00%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-volume-surge"><i class="ti ti-bolt" aria-hidden="true"></i> 出来高上位10</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6740" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">7</span>
+        <span class="dr-name">フジクラ</span>
+        <span class="dr-code">5803・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">42,643,000株</span>
+      <span class="dr-price">5,150円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+4.29%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-volume-surge"><i class="ti ti-bolt" aria-hidden="true"></i> 出来高上位10</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5803" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">8</span>
+        <span class="dr-name">キオクシア</span>
+        <span class="dr-code">285A・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">39,973,100株</span>
+      <span class="dr-price">77,000円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.10%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-volume-surge"><i class="ti ti-bolt" aria-hidden="true"></i> 出来高上位10</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=285A" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">9</span>
+        <span class="dr-name">日産自</span>
+        <span class="dr-code">7201・輸送用機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">35,776,000株</span>
+      <span class="dr-price">310.5円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.97%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-volume-surge"><i class="ti ti-bolt" aria-hidden="true"></i> 出来高上位10</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7201" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">10</span>
+        <span class="dr-name">三菱ＵＦＪ</span>
+        <span class="dr-code">8306・銀行業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">35,147,200株</span>
+      <span class="dr-price">3,461円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.38%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-volume-surge"><i class="ti ti-bolt" aria-hidden="true"></i> 出来高上位10</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8306" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">11</span>
+        <span class="dr-name">東電ＨＤ</span>
+        <span class="dr-code">9501・電気･ガス業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">33,551,800株</span>
+      <span class="dr-price">480.4円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.27%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9501" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">12</span>
+        <span class="dr-name">村田製</span>
+        <span class="dr-code">6981・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">32,667,200株</span>
+      <span class="dr-price">9,860円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+4.06%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6981" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">13</span>
+        <span class="dr-name">住友電</span>
+        <span class="dr-code">5802・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">28,403,300株</span>
+      <span class="dr-price">2,582円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+7.54%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5802" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">14</span>
+        <span class="dr-name">トヨタ</span>
+        <span class="dr-code">7203・輸送用機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">26,668,000株</span>
+      <span class="dr-price">2,823円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.04%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7203" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">15</span>
+        <span class="dr-name">日本製鉄</span>
+        <span class="dr-code">5401・鉄鋼・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">25,181,800株</span>
+      <span class="dr-price">550.2円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.04%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5401" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">16</span>
+        <span class="dr-name">ＪＸ金属</span>
+        <span class="dr-code">5016・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">24,382,900株</span>
+      <span class="dr-price">3,962円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+2.38%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5016" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">17</span>
+        <span class="dr-name">太陽誘電</span>
+        <span class="dr-code">6976・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">21,279,300株</span>
+      <span class="dr-price">14,730円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.34%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6976" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">18</span>
+        <span class="dr-name">サンリオ</span>
+        <span class="dr-code">8136・卸売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">18,591,700株</span>
+      <span class="dr-price">1,142.5円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.06%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8136" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">19</span>
+        <span class="dr-name">伊藤忠</span>
+        <span class="dr-code">8001・卸売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">17,633,900株</span>
+      <span class="dr-price">1,884円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.40%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8001" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">20</span>
+        <span class="dr-name">セブン＆アイ</span>
+        <span class="dr-code">3382・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">17,044,300株</span>
+      <span class="dr-price">2,021.5円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.37%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=3382" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">21</span>
+        <span class="dr-name">ソニーＧ</span>
+        <span class="dr-code">6758・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">17,008,800株</span>
+      <span class="dr-price">3,359円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.47%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6758" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">22</span>
+        <span class="dr-name">古河電</span>
+        <span class="dr-code">5801・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">16,901,100株</span>
+      <span class="dr-price">3,725円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+5.14%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5801" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">23</span>
+        <span class="dr-name">三菱重</span>
+        <span class="dr-code">7011・機械・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">14,270,300株</span>
+      <span class="dr-price">3,818円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.34%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7011" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">24</span>
+        <span class="dr-name">楽天グループ</span>
+        <span class="dr-code">4755・サービス業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">14,072,600株</span>
+      <span class="dr-price">803.2円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.43%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4755" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">25</span>
+        <span class="dr-name">ルネサス</span>
+        <span class="dr-code">6723・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">13,112,800株</span>
+      <span class="dr-price">4,762円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.14%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6723" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">26</span>
+        <span class="dr-name">ソシオネクス</span>
+        <span class="dr-code">6526・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">12,771,900株</span>
+      <span class="dr-price">2,850円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+7.00%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6526" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">27</span>
+        <span class="dr-name">ホンダ</span>
+        <span class="dr-code">7267・輸送用機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">12,499,300株</span>
+      <span class="dr-price">1,495.5円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.43%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7267" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">28</span>
+        <span class="dr-name">イオン</span>
+        <span class="dr-code">8267・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">12,445,400株</span>
+      <span class="dr-price">1,377円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-2.65%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8267" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#fde68a,#fbbf24,#d97706)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#fbbf24;color:#78350f">29</span>
+        <span class="dr-name">川重</span>
+        <span class="dr-code">7012・輸送用機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#fbbf24">12,266,800株</span>
+      <span class="dr-price">2,779.5円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.20%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7012" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+</div></div><div class="dr-pane" data-drpane="baibaidaka" style="display:none"><div class="dr-comment">圧倒的トップはキオクシアの3,224億円で、2位ソフトバンクグループ（458億円）の実に7倍という突出ぶり。株価自体は-1.10%とわずかに下落しているが、値がさ株（77,000円）ゆえの金額規模であり、売買代金の突出は必ずしも強気シグナルではない点に注意。半導体製造装置勢（東エレク、アドテスト、レーザーテク、ディスコ、コクサイエレ、スクリン）が軒並み上位に顔を出しており、AI・半導体投資テーマへの資金集中が代金ベースでも鮮明。
+
+出来高ランキングとの重なりが薄い銘柄として、ファーストリテイリング（-3.59%、2,036億円）が目立つ。値がさ株での急落に伴う代金増加であり、利益確定・見切り売りが厚かったとみられる。東京海上も-3.32%と代金上位に入っており、保険株への売りが目立った一日。半導体製造装置＋SUMCO・JX金属・住友電・フジクラなど「AI投資インフラ」テーマの上昇組と、ファストリ・東京海上など下落組がともに代金上位に並ぶ、選別色の強い相場だったことが読み取れる。
+
+メガバンク3行（三菱UFJ・三井住友FG・みずほFG）はいずれも代金上位だが値動きは限定的で、金利観測絡みの需給的な売買が中心とみられる。総じて、AI・半導体テーマの継続的な資金流入と、値がさグロース株（ファストリ）での利益確定売りが同時進行した一日と評価できる。
+</div><div class="dr-card-grid">
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">1</span>
+        <span class="dr-name">キオクシア</span>
+        <span class="dr-code">285A・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">3,224,111百万円</span>
+      <span class="dr-price">77,000円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.10%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-turnover-concentration"><i class="ti ti-coin" aria-hidden="true"></i> 資金集中</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=285A" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">2</span>
+        <span class="dr-name">ＳＢＧ</span>
+        <span class="dr-code">9984・情報･通信業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">458,037百万円</span>
+      <span class="dr-price">6,370円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+10.65%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-turnover-concentration"><i class="ti ti-coin" aria-hidden="true"></i> 資金集中</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9984" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">3</span>
+        <span class="dr-name">村田製</span>
+        <span class="dr-code">6981・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">322,479百万円</span>
+      <span class="dr-price">9,860円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+4.06%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-turnover-concentration"><i class="ti ti-coin" aria-hidden="true"></i> 資金集中</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6981" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">4</span>
+        <span class="dr-name">太陽誘電</span>
+        <span class="dr-code">6976・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">316,610百万円</span>
+      <span class="dr-price">14,730円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.34%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-turnover-concentration"><i class="ti ti-coin" aria-hidden="true"></i> 資金集中</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6976" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">5</span>
+        <span class="dr-name">東エレク</span>
+        <span class="dr-code">8035・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">286,296百万円</span>
+      <span class="dr-price">72,940円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+2.65%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-turnover-concentration"><i class="ti ti-coin" aria-hidden="true"></i> 資金集中</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8035" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">6</span>
+        <span class="dr-name">フジクラ</span>
+        <span class="dr-code">5803・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">224,784百万円</span>
+      <span class="dr-price">5,150円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+4.29%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-turnover-concentration"><i class="ti ti-coin" aria-hidden="true"></i> 資金集中</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5803" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">7</span>
+        <span class="dr-name">アドテスト</span>
+        <span class="dr-code">6857・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">220,886百万円</span>
+      <span class="dr-price">29,830円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+2.30%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-turnover-concentration"><i class="ti ti-coin" aria-hidden="true"></i> 資金集中</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6857" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">8</span>
+        <span class="dr-name">ファストリ</span>
+        <span class="dr-code">9983・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">203,603百万円</span>
+      <span class="dr-price">82,110円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-3.59%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-turnover-concentration"><i class="ti ti-coin" aria-hidden="true"></i> 資金集中</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9983" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">9</span>
+        <span class="dr-name">イビデン</span>
+        <span class="dr-code">4062・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">127,904百万円</span>
+      <span class="dr-price">20,300円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+4.00%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-turnover-concentration"><i class="ti ti-coin" aria-hidden="true"></i> 資金集中</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4062" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">10</span>
+        <span class="dr-name">三菱ＵＦＪ</span>
+        <span class="dr-code">8306・銀行業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">121,322百万円</span>
+      <span class="dr-price">3,461円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.38%</span>
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-turnover-concentration"><i class="ti ti-coin" aria-hidden="true"></i> 資金集中</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8306" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">11</span>
+        <span class="dr-name">レーザーテク</span>
+        <span class="dr-code">6920・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">108,046百万円</span>
+      <span class="dr-price">44,380円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+3.16%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6920" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">12</span>
+        <span class="dr-name">ディスコ</span>
+        <span class="dr-code">6146・機械・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">97,894百万円</span>
+      <span class="dr-price">72,560円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.47%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6146" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">13</span>
+        <span class="dr-name">ＪＸ金属</span>
+        <span class="dr-code">5016・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">96,550百万円</span>
+      <span class="dr-price">3,962円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+2.38%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5016" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">14</span>
+        <span class="dr-name">コクサイエレ</span>
+        <span class="dr-code">6525・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">85,331百万円</span>
+      <span class="dr-price">10,840円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.28%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6525" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">15</span>
+        <span class="dr-name">トヨタ</span>
+        <span class="dr-code">7203・輸送用機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">75,499百万円</span>
+      <span class="dr-price">2,823円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.04%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7203" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">16</span>
+        <span class="dr-name">住友電</span>
+        <span class="dr-code">5802・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">73,455百万円</span>
+      <span class="dr-price">2,582円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+7.54%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5802" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">17</span>
+        <span class="dr-name">三井住友ＦＧ</span>
+        <span class="dr-code">8316・銀行業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">70,694百万円</span>
+      <span class="dr-price">6,814円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-0.03%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8316" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">18</span>
+        <span class="dr-name">リクルート</span>
+        <span class="dr-code">6098・サービス業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">64,974百万円</span>
+      <span class="dr-price">12,240円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-2.12%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6098" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">19</span>
+        <span class="dr-name">古河電</span>
+        <span class="dr-code">5801・非鉄金属・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">63,871百万円</span>
+      <span class="dr-price">3,725円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+5.14%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5801" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">20</span>
+        <span class="dr-name">ルネサス</span>
+        <span class="dr-code">6723・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">63,846百万円</span>
+      <span class="dr-price">4,762円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.14%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6723" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">21</span>
+        <span class="dr-name">みずほＦＧ</span>
+        <span class="dr-code">8411・銀行業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">61,187百万円</span>
+      <span class="dr-price">8,307円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.13%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8411" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">22</span>
+        <span class="dr-name">信越化</span>
+        <span class="dr-code">4063・化学・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">60,972百万円</span>
+      <span class="dr-price">7,320円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+4.42%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4063" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">23</span>
+        <span class="dr-name">キーエンス</span>
+        <span class="dr-code">6861・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">58,446百万円</span>
+      <span class="dr-price">76,970円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+1.81%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6861" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">24</span>
+        <span class="dr-name">ソニーＧ</span>
+        <span class="dr-code">6758・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">57,244百万円</span>
+      <span class="dr-price">3,359円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.47%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6758" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">25</span>
+        <span class="dr-name">スクリン</span>
+        <span class="dr-code">7735・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">55,758百万円</span>
+      <span class="dr-price">18,150円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+2.25%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7735" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">26</span>
+        <span class="dr-name">日立</span>
+        <span class="dr-code">6501・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">54,749百万円</span>
+      <span class="dr-price">4,700円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.22%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6501" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">27</span>
+        <span class="dr-name">三菱重</span>
+        <span class="dr-code">7011・機械・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">54,550百万円</span>
+      <span class="dr-price">3,818円</span>
+      <span class="dr-mainrow-chg dr-gain-up">+0.34%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7011" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">28</span>
+        <span class="dr-name">東京海上</span>
+        <span class="dr-code">8766・保険業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">52,548百万円</span>
+      <span class="dr-price">7,609円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-3.32%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8766" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:linear-gradient(90deg,#f5d576,#d4af37,#8a6d1f)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:#d4af37;color:#5c4a0a">29</span>
+        <span class="dr-name">任天堂</span>
+        <span class="dr-code">7974・その他製品・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:#d4af37">48,552百万円</span>
+      <span class="dr-price">7,030円</span>
+      <span class="dr-mainrow-chg dr-gain-down">-1.26%</span>
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7974" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+</div></div><div class="dr-pane" data-drpane="joushouritsu" style="display:none"><div class="dr-comment">SUMCOのストップ高（+15.40%）を筆頭に、二桁上昇銘柄が5本並ぶ強い一日。半導体製造装置関連が目立ち、リガクHD（+10.98%）、タツモ（+10.62%）、サムコ（+9.72%）、芝浦（+9.25%）と、SUMCOと合わせて半導体材料・製造装置セクターへの資金集中が上昇率上位からも裏付けられる。特にリガクHD・芝浦は出来高も500万株前後としっかり伴っており、単発の思惑買いではなく実需的な物色とみられる。
+
+アトラエ（+12.59%）、JPMC（+11.84%）は半導体とは無関係のセクターで急伸しており、個別の好材料（決算・IR）が出た可能性が高い。特にJPMCは配当利回り4.03%と高く、好材料に加えて配当妙味も意識された動きかもしれない。ソフトバンクグループ（+10.65%）は出来高7,226万株を伴う大型株の急伸で、AI投資関連の思惑が根強い。
+
+ユニオンツール（+9.33%）、山一電機（+8.33%）など値がさの精密機械・電子部品株も上位に入っており、半導体テーマの裾野の広さがうかがえる。乃村工芸社（+8.23%）はディスプレイ・空間デザイン関連で、他とはやや毛色が異なる動き。全体として本日は半導体製造装置・材料株への物色が主軸となった上昇局面であり、材料の出た個別株（アトラエ、JPMC）は好材料の持続性を、半導体関連は業界全体のセンチメント（他社の決算・受注動向）を注視したい。
+</div><div class="dr-card-grid">
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">1</span>
+        <span class="dr-name">アトラエ</span>
+        <span class="dr-code">6194・サービス業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+12.59%</span>
+      <span class="dr-price">805円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6194" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">2</span>
+        <span class="dr-name">ＪＰＭＣ</span>
+        <span class="dr-code">3276・不動産業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+11.84%</span>
+      <span class="dr-price">1,587円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=3276" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">3</span>
+        <span class="dr-name">リガクＨＤ</span>
+        <span class="dr-code">268A・精密機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+10.98%</span>
+      <span class="dr-price">2,456円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=268A" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">4</span>
+        <span class="dr-name">ＳＢＧ</span>
+        <span class="dr-code">9984・情報･通信業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+10.65%</span>
+      <span class="dr-price">6,370円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9984" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">5</span>
+        <span class="dr-name">タツモ</span>
+        <span class="dr-code">6266・機械・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+10.62%</span>
+      <span class="dr-price">5,210円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6266" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">6</span>
+        <span class="dr-name">サムコ</span>
+        <span class="dr-code">6387・機械・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+9.72%</span>
+      <span class="dr-price">12,980円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6387" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">7</span>
+        <span class="dr-name">三菱自</span>
+        <span class="dr-code">7211・輸送用機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+9.44%</span>
+      <span class="dr-price">361.8円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7211" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">8</span>
+        <span class="dr-name">ユニオンツル</span>
+        <span class="dr-code">6278・機械・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+9.33%</span>
+      <span class="dr-price">20,970円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6278" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">9</span>
+        <span class="dr-name">芝浦</span>
+        <span class="dr-code">6590・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+9.25%</span>
+      <span class="dr-price">5,790円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6590" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">10</span>
+        <span class="dr-name">エアトリ</span>
+        <span class="dr-code">6191・サービス業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+8.75%</span>
+      <span class="dr-price">870円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6191" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">11</span>
+        <span class="dr-name">Ｃ＆Ｒ</span>
+        <span class="dr-code">4763・サービス業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+8.55%</span>
+      <span class="dr-price">1,448円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4763" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">12</span>
+        <span class="dr-name">ラサ工</span>
+        <span class="dr-code">4022・化学・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+8.42%</span>
+      <span class="dr-price">1,945円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4022" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">13</span>
+        <span class="dr-name">山一電機</span>
+        <span class="dr-code">6941・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+8.33%</span>
+      <span class="dr-price">9,230円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6941" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">14</span>
+        <span class="dr-name">乃村工芸社</span>
+        <span class="dr-code">9716・サービス業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+8.23%</span>
+      <span class="dr-price">1,183円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9716" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+</div></div><div class="dr-pane" data-drpane="gerakuritsu" style="display:none"><div class="dr-comment">ドラッグストア・小売セクターに下落が集中した一日。スギHD（-8.06%）を筆頭に、ツルハHD（-4.38%）と大手ドラッグストア2社がそろって大きく売られており、業界共通の悪材料（薬価改定・競争激化・既存店動向の悪化など）が意識された可能性が高い。ベルク（食品スーパー）、サッポロ（食品）、日清食品HD（食品）も下落しており、内需・小売・食品セクター全体に売りが波及した印象。
+
+ファーストリテイリング（-3.59%）は売買代金上位でも触れた通り値がさ株の急落で、-3,060円という下げ幅は大きい。良品計画（-3.44%）も同じ小売・アパレル系で、内需消費関連への警戒が広がっている可能性がある。JINS HD（-3.73%）も小売系で、この日は生活必需品・小売セクター全般に利益確定・見切り売りが出た地合いだったとみられる。
+
+半導体・AI関連が上昇率を独占した一方で、内需ディフェンシブ株（ドラッグストア、食品、小売）に資金が逃避せず、むしろ売られている点が特徴的。値がさグロース株（ファストリ）の下落と合わせ、この日はリスクオン・ディフェンシブ売りの資金シフトが起きていたことがうかがえる。翌営業日以降、ドラッグストア・食品セクターに個別材料があったか、あるいはセクター全体の需給悪化かを確認したい。
+</div><div class="dr-card-grid">
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">1</span>
+        <span class="dr-name">スギＨＤ</span>
+        <span class="dr-code">7649・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-8.06%</span>
+      <span class="dr-price">2,922円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7649" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">2</span>
+        <span class="dr-name">Ｔ－ＢＡＳＥ</span>
+        <span class="dr-code">3415・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-4.52%</span>
+      <span class="dr-price">401円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=3415" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">3</span>
+        <span class="dr-name">ツルハＨＤ</span>
+        <span class="dr-code">3391・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-4.38%</span>
+      <span class="dr-price">2,257円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=3391" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">4</span>
+        <span class="dr-name">ＷＮＩウェザ</span>
+        <span class="dr-code">4825・情報･通信業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-4.26%</span>
+      <span class="dr-price">1,980円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4825" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">5</span>
+        <span class="dr-name">東和銀</span>
+        <span class="dr-code">8558・銀行業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-4.07%</span>
+      <span class="dr-price">1,272円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=8558" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">6</span>
+        <span class="dr-name">ベルク</span>
+        <span class="dr-code">9974・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-3.89%</span>
+      <span class="dr-price">6,430円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9974" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">7</span>
+        <span class="dr-name">東テク</span>
+        <span class="dr-code">9960・卸売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-3.79%</span>
+      <span class="dr-price">4,065円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9960" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">8</span>
+        <span class="dr-name">ＪＩＮＳＨＤ</span>
+        <span class="dr-code">3046・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-3.73%</span>
+      <span class="dr-price">7,740円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=3046" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">9</span>
+        <span class="dr-name">ＯＫＩ</span>
+        <span class="dr-code">6703・電気機器・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-3.71%</span>
+      <span class="dr-price">3,375円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6703" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">10</span>
+        <span class="dr-name">サッポロ</span>
+        <span class="dr-code">2501・食料品・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-3.70%</span>
+      <span class="dr-price">1,993.5円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=2501" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">11</span>
+        <span class="dr-name">ブックオフＧ</span>
+        <span class="dr-code">9278・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-3.61%</span>
+      <span class="dr-price">2,084円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9278" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">12</span>
+        <span class="dr-name">ファストリ</span>
+        <span class="dr-code">9983・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-3.59%</span>
+      <span class="dr-price">82,110円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9983" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">13</span>
+        <span class="dr-name">日清食ＨＤ</span>
+        <span class="dr-code">2897・食料品・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-3.50%</span>
+      <span class="dr-price">2,794.5円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=2897" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">14</span>
+        <span class="dr-name">良品計画</span>
+        <span class="dr-code">7453・小売業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-3.44%</span>
+      <span class="dr-price">3,623円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=7453" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">15</span>
+        <span class="dr-name">日シス技術</span>
+        <span class="dr-code">4323・情報･通信業・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-3.41%</span>
+      <span class="dr-price">1,783円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4323" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+</div></div><div class="dr-pane" data-drpane="stop_high" style="display:none"><div class="dr-comment">ストップ高9銘柄はプライム市場のSUMCOを除き、すべてグロース・スタンダード市場の小型株。SUMCO以外は明確なテーマ性の統一が薄く、個別の好材料（決算・提携・IR）による単発の急伸とみられる。monoAI（+38.46%）、ビープラッツ（+34.48%）、Amazia（+25.32%）は特に上昇率が大きく、小型株特有の値動きの荒さを示している。
+
+MORESCO（+20.83%）、北川精機（+19.49%）、AIメカテック（+17.27%）、ミラティブ（+16.60%）、CANBAS（+15.20%）と、いずれも二桁の急騰で個人投資家中心の思惑買いが集中したとみられる。北川精機・AIメカテックは社名からAI・自動化関連を連想させ、AI投資テーマの裾野が小型株にも波及している可能性がある。
+
+小型株のストップ高は材料の一過性が高く、翌営業日に急落するケースも多いため、個別の適時開示・ニュースの確認が不可欠。プライムのSUMCOは前述の通り半導体テーマでの実需的な動きだが、他の小型株群は投機的な資金の短期回転による色彩が強いと考えられ、追随買いは材料の持続性を見極めてから判断すべき。
+</div><div class="dr-card-grid">
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">1</span>
+        <span class="dr-name">ＳＵＭＣＯ</span>
+        <span class="dr-code">3436・金属製品・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+15.40%</span>
+      <span class="dr-price">5,244円</span>
+      
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-stop-high"><i class="ti ti-arrow-bar-up" aria-hidden="true"></i> 本日ストップ高</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=3436" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">2</span>
+        <span class="dr-name">ビープラッツ</span>
+        <span class="dr-code">4381</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+34.48%</span>
+      <span class="dr-price">312円</span>
+      
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-stop-high"><i class="ti ti-arrow-bar-up" aria-hidden="true"></i> 本日ストップ高</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4381" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">3</span>
+        <span class="dr-name">Ａｍａｚｉａ</span>
+        <span class="dr-code">4424</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+25.32%</span>
+      <span class="dr-price">396円</span>
+      
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-stop-high"><i class="ti ti-arrow-bar-up" aria-hidden="true"></i> 本日ストップ高</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4424" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">4</span>
+        <span class="dr-name">ＣＡＮＢＡＳ</span>
+        <span class="dr-code">4575</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+15.20%</span>
+      <span class="dr-price">758円</span>
+      
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-stop-high"><i class="ti ti-arrow-bar-up" aria-hidden="true"></i> 本日ストップ高</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=4575" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">5</span>
+        <span class="dr-name">ミラティブ</span>
+        <span class="dr-code">472A</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+16.60%</span>
+      <span class="dr-price">562円</span>
+      
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-stop-high"><i class="ti ti-arrow-bar-up" aria-hidden="true"></i> 本日ストップ高</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=472A" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">6</span>
+        <span class="dr-name">ＭＯＲＥＳＣ</span>
+        <span class="dr-code">5018</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+20.83%</span>
+      <span class="dr-price">2,320円</span>
+      
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-stop-high"><i class="ti ti-arrow-bar-up" aria-hidden="true"></i> 本日ストップ高</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5018" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">7</span>
+        <span class="dr-name">ｍｏｎｏＡＩ</span>
+        <span class="dr-code">5240</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+38.46%</span>
+      <span class="dr-price">180円</span>
+      
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-stop-high"><i class="ti ti-arrow-bar-up" aria-hidden="true"></i> 本日ストップ高</span><span class="dr-badge-risk-caution"><i class="ti ti-arrow-down-circle" aria-hidden="true"></i> 低位株注意</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=5240" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">8</span>
+        <span class="dr-name">ＡＩメカ</span>
+        <span class="dr-code">6227・機械・東証スタンダード</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+17.27%</span>
+      <span class="dr-price">6,790円</span>
+      
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-stop-high"><i class="ti ti-arrow-bar-up" aria-hidden="true"></i> 本日ストップ高</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6227" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">9</span>
+        <span class="dr-name">タツモ</span>
+        <span class="dr-code">6266・機械・東証プライム</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+10.62%</span>
+      <span class="dr-price">5,210円</span>
+      
+    </div>
+    
+    
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6266" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--buy)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--buy);color:#065f46">10</span>
+        <span class="dr-name">北川精機</span>
+        <span class="dr-code">6327</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--buy)">+19.49%</span>
+      <span class="dr-price">6,130円</span>
+      
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-stop-high"><i class="ti ti-arrow-bar-up" aria-hidden="true"></i> 本日ストップ高</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=6327" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+</div></div><div class="dr-pane" data-drpane="stop_low" style="display:none"><div class="dr-comment">名証メザニン市場の成友興業が単独でストップ安（-18.93%）。他に連想されるようなテーマ性の同業種銘柄が見当たらず、個別の悪材料（決算下方修正・不祥事・大口株主の売却など）による単発の急落とみられる。出来高情報がないため商いの厚みは不明だが、下落率の大きさから相応の売りが出たと推測される。
+
+本日の全体相場は半導体・AI関連中心の強い上昇地合いだったため、この銘柄の急落は市場全体の地合い悪化ではなく、完全に個別要因による特殊事例と判断できる。適時開示・ニュースで個別材料（決算発表、業績修正、不祥事等）を確認したい。
+</div><div class="dr-card-grid">
+<div class="dr-card">
+  <div class="dr-topbar" style="background:var(--avoid)"></div>
+  <div class="dr-body">
+    <div class="dr-head">
+      <div class="dr-rankname">
+        <span class="dr-rank-badge" style="background:var(--avoid);color:#7f1d1d">1</span>
+        <span class="dr-name">成友興業</span>
+        <span class="dr-code">9170</span>
+      </div>
+    </div>
+    <div class="dr-mainrow">
+      <span class="dr-main-value" style="color:var(--avoid)">-18.93%</span>
+      <span class="dr-price">2,141円</span>
+      
+    </div>
+    
+    <div class="dr-badges"><span class="dr-badge-stop-low"><i class="ti ti-arrow-bar-down" aria-hidden="true"></i> 本日ストップ安</span></div>
+    <div class="dr-link"><div class="stocklinks" style="margin:6px 0;"><a class="schip" href="https://kabutan.jp/stock/?code=9170" target="_blank" rel="noopener noreferrer">株探トップ↗</a></div></div>
+  </div>
+</div>
+</div></div><div class="dr-pane" data-drpane="sector_index" style="display:none"><div class="dr-comment">業種別でも金属製品（+4.55%）・非鉄金属（+4.47%）が上位を独占し、SUMCO・JX金属・古河電・住友電といった個別の急伸銘柄が業種指数を牽引した構図が明確。情報・通信業（+3.05%）もソフトバンクグループの大幅高が寄与し、電気機器（+1.04%）・精密機器（+0.80%）もプラス圏で、AI・半導体投資インフラ関連セクターが軒並み地合いを主導した一日と総括できる。機械（+1.19%）も三菱重工・川崎重工など上位に入っており、設備投資関連の底堅さがうかがえる。
+
+一方で下落セクターの上位は小売業（-2.13%）、保険業（-2.12%）、海運業（-2.51%）と、下落率ランキングで見た個別銘柄（スギHD、ツルハHD等）と整合的。食料品（-1.40%）、サービス業（-1.16%）も軟調で、内需・ディフェンシブ系統への売りが業種全体に広がっていたことが確認できる。東京海上の急落（-3.32%）は保険業指数の下落（-2.12%）に直結している。
+
+33業種中プラスが14業種・マイナスが19業種と、指数単体で見ればやや下落優勢だが、値動きの大きさでは金属製品・非鉄金属の上昇幅（+4%台）が小売・保険・海運の下落幅（-2%台）を上回っており、上値の勢いは強い。全体として「AI・半導体インフラ関連への資金集中」と「内需・ディフェンシブからの資金流出」が同時進行した、明確なセクターローテーションの一日と評価できる。
+</div><p class="dr-section-title">業種別騰落率</p>
+<div class="dr-cat-list">
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">金属製品</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:100%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+4.5%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">非鉄金属</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:98%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+4.5%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">情報・通信業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:67%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+3.0%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">証券・商品</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:38%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+1.7%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">機械</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:26%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+1.2%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">化学</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:25%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+1.2%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">電気機器</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:22%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+1.0%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">精密機器</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:17%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+0.8%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">その他金融業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:9%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+0.4%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">銀行業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:7%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+0.4%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">輸送用機器</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:3%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+0.2%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">ゴム製品</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:2%;background:#E24B4A"></div></div>
+  <div class="dr-cat-count dr-gain-up">+0.1%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">医薬品</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:2%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.1%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">石油・石炭</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:4%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.2%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">ガラス・土石</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:4%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.2%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">パルプ・紙</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:6%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.3%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">建設業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:10%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.5%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">不動産業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:11%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.5%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">卸売業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:11%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.5%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">繊維製品</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:12%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.6%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">その他製品</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:13%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.6%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">鉄鋼</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:14%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.7%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">陸運業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:18%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.8%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">水産・農林業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:19%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-0.9%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">電気・ガス</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:22%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-1.0%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">サービス業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:25%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-1.2%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">倉庫・運輸</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:27%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-1.2%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">空運業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:27%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-1.3%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">食料品</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:30%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-1.4%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">鉱業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:36%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-1.7%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">保険業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:46%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-2.1%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">小売業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:46%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-2.1%</div>
+</div>
+<div class="dr-cat-row">
+  <div class="dr-cat-label" style="font-size:13px">海運業</div>
+  <div class="dr-cat-bar-wrap"><div class="dr-cat-bar" style="width:55%;background:#378ADD"></div></div>
+  <div class="dr-cat-count dr-gain-down">-2.5%</div>
+</div>
+</div></div></div><div class="dr-date" data-date="2026-07-07" style="display:none"><div class="dr-tabs dr-tabs-group"><a class="dr-tab active" data-drgroup="price_volume" href="javascript:void(0)">価格・出来高系</a><a class="dr-tab " data-drgroup="updown" href="javascript:void(0)">上下落率系</a><a class="dr-tab " data-drgroup="stop" href="javascript:void(0)">スト高安系</a><a class="dr-tab " data-drgroup="sector" href="javascript:void(0)">業種別</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="price_volume" style="display:block"><a class="dr-tab active" data-drsub="kakkyo" style="--tab-color:#ec4899;--tab-dark:#831843" href="javascript:void(0)">活況銘柄</a><a class="dr-tab " data-drsub="dekidaka" style="--tab-color:#fbbf24;--tab-dark:#78350f" href="javascript:void(0)">出来高</a><a class="dr-tab " data-drsub="baibaidaka" style="--tab-color:#d4af37;--tab-dark:#5c4a0a" href="javascript:void(0)">売買代金</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="updown" style="display:none"><a class="dr-tab " data-drsub="joushouritsu" style="--tab-color:var(--buy);--tab-dark:#065f46" href="javascript:void(0)">上昇率</a><a class="dr-tab " data-drsub="gerakuritsu" style="--tab-color:var(--avoid);--tab-dark:#7f1d1d" href="javascript:void(0)">下落率</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="stop" style="display:none"><a class="dr-tab " data-drsub="stop_high" style="--tab-color:var(--buy);--tab-dark:#065f46" href="javascript:void(0)">ストップ高</a><a class="dr-tab " data-drsub="stop_low" style="--tab-color:var(--avoid);--tab-dark:#7f1d1d" href="javascript:void(0)">ストップ安</a></div><div class="dr-tabs dr-tabs-sub" data-drgrouppane="sector" style="display:none"><a class="dr-tab " data-drsub="sector_index" style="--tab-color:#a78bfa;--tab-dark:#4c1d95" href="javascript:void(0)">業種別騰落</a></div><div class="dr-pane" data-drpane="kakkyo" style="display:block"><div class="dr-comment">本日の活況上位は半導体・AI関連の全面安が突出。キオクシア-11.3%、SUMCO-11.6%、太陽誘電-11.0%、コクサイエレ-9.1%、村田製-10.1%、ローム-7.3%、安川電-7.4%、レーザーテック-6.4%と、装置・部材・電子部品まで広範囲に売られており、単一銘柄要因ではなく地合い悪化型のセクター調整とみられる。前日の米半導体株（SOX等）安を受けた連想売りの可能性が高く、翌日の海外市況確認が必須。
 
 一方でトヨタ+0.8%、三菱UFJ+2.3%、日立+2.9%、みずほFG+0.4%、ソニーG+2.3%、任天堂+1.6%、良品計画+3.8%など金融・内需・非製造業系は堅調を維持しており、資金が半導体テーマから逃避し金融・ディフェンシブへローテーションした一日と解釈できる。
 
@@ -13752,7 +16504,7 @@ function ifSwitchWeek(w){
 .sr-pct { font-size: 15px; font-weight: 700; color: #e6e8ee; margin-top: 2px; }
 .sr-focus-label { font-size: 11px; color: #6f7688; margin: 8px 0 4px; }
 </style>
-<div style="margin:10px 0 4px;padding:12px 14px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;"><div style="font-size:12.5px;color:var(--muted);margin-bottom:8px;">🇺🇸 トランプ発言（直近24時間）<span style="color:var(--accent);"> 市場関連 5件</span><span style="color:var(--muted);"> ／ その他 17件</span></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 13:07</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">イラン</span><a href="https://www.trumpstruth.org/statuses/39941" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">RT @realDonaldTrump1000 Missiles are Locked and Loaded and aimed at the Islamic Republic of Iran, with thousands of more to immediately foll…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 12:18</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">イラン</span><a href="https://www.trumpstruth.org/statuses/39938" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">1000 Missiles are Locked and Loaded and aimed at the Islamic Republic of Iran, with thousands of more to immediately follow, should the Iran…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 08:35</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">通商</span><a href="https://www.trumpstruth.org/statuses/39928" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">BIGGER INVESTMENTS JUST KEEP COMING! The Trump Effect is REAL! Micron is accelerating its U.S. spending to a MASSIVE 250 BILLION DOLLARS to …</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 03:30</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">欧州</span><a href="https://www.trumpstruth.org/statuses/39919" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">It is my Great Honor to endorse Highly Respected America First Congressman, Andy Biggs, who is running to be the next Governor of the wonder…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/10 23:32</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">イラン</span><a href="https://www.trumpstruth.org/statuses/39916" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">The Islamic Republic of Iran has asked us to continue “talks.” We have agreed to do so, but the United States has stated to them, in no unce…</a></div><div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--line);"></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 21:16</span><a href="https://www.trumpstruth.org/statuses/39943" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Wow! Palm Beach has always been a special place to me. So Beautiful!!! President DONALD J. TRUMP</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 13:04</span><a href="https://www.trumpstruth.org/statuses/39940" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">I was able to cut a MUCH BETTER DEAL for America, and by so doing, will be allowing the new and spectacular Gordie Howe International Bridge…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 11:17</span><a href="https://www.trumpstruth.org/statuses/39936" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Jack Smith’s team may have exposed classified info while probing Trump for allegedly doing the same:</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 09:19</span><a href="https://www.trumpstruth.org/statuses/39933" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Apple to invest $30 billion in US chip manufacturing:</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 08:48</span><a href="https://www.trumpstruth.org/statuses/39932" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">This was crooked right from the beginning!Trump hush money prosecutor played larger role in federal cases against prez than known, logs show…</a></div><div style="font-size:11px;color:var(--muted);margin-top:4px;">ほか 12 件</div><div style="font-size:10.5px;color:var(--muted);margin-top:8px;">※市場への影響は自動判定していません。ラベルは話題の目安・材料の見落とし防止用です。</div></div>
+<div style="margin:10px 0 4px;padding:12px 14px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;"><div style="font-size:12.5px;color:var(--muted);margin-bottom:8px;">🇺🇸 トランプ発言（直近24時間）<span style="color:var(--accent);"> 市場関連 4件</span><span style="color:var(--muted);"> ／ その他 17件</span></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 13:07</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">イラン</span><a href="https://www.trumpstruth.org/statuses/39941" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">RT @realDonaldTrump1000 Missiles are Locked and Loaded and aimed at the Islamic Republic of Iran, with thousands of more to immediately foll…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 12:18</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">イラン</span><a href="https://www.trumpstruth.org/statuses/39938" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">1000 Missiles are Locked and Loaded and aimed at the Islamic Republic of Iran, with thousands of more to immediately follow, should the Iran…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 08:35</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">通商</span><a href="https://www.trumpstruth.org/statuses/39928" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">BIGGER INVESTMENTS JUST KEEP COMING! The Trump Effect is REAL! Micron is accelerating its U.S. spending to a MASSIVE 250 BILLION DOLLARS to …</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 03:30</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">欧州</span><a href="https://www.trumpstruth.org/statuses/39919" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">It is my Great Honor to endorse Highly Respected America First Congressman, Andy Biggs, who is running to be the next Governor of the wonder…</a></div><div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--line);"></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/12 01:23</span><a href="https://www.trumpstruth.org/statuses/39944" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Maggot Hagerman has covered me incorrectly for ten years. Her book is a joke! 90% of it is Fake News. She has made a living off her bad repo…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 21:16</span><a href="https://www.trumpstruth.org/statuses/39943" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Wow! Palm Beach has always been a special place to me. So Beautiful!!! President DONALD J. TRUMP</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 13:04</span><a href="https://www.trumpstruth.org/statuses/39940" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">I was able to cut a MUCH BETTER DEAL for America, and by so doing, will be allowing the new and spectacular Gordie Howe International Bridge…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 11:17</span><a href="https://www.trumpstruth.org/statuses/39936" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Jack Smith’s team may have exposed classified info while probing Trump for allegedly doing the same:</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/11 09:19</span><a href="https://www.trumpstruth.org/statuses/39933" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Apple to invest $30 billion in US chip manufacturing:</a></div><div style="font-size:11px;color:var(--muted);margin-top:4px;">ほか 12 件</div><div style="font-size:10.5px;color:var(--muted);margin-top:8px;">※市場への影響は自動判定していません。ラベルは話題の目安・材料の見落とし防止用です。</div></div>
 <style>
 .kabu-news{padding:14px 0 6px;margin:6px 0 0;color:#cdd6e0;font-family:inherit;}
 .kabu-news .nh b{font-size:16px;font-weight:600;color:#e6edf3;letter-spacing:.02em;}
@@ -13773,7 +16525,7 @@ function ifSwitchWeek(w){
  font-size:11px;color:#6e7681;line-height:1.5;}
 .kabu-news .none{font-size:13px;color:#8b949e;padding:8px 0;}
 </style>
-<section class="kabu-news"><div class="nh"><b>注目ニュース</b></div><div class="rule"></div><div class="leg">主要メディアの見出しを横断（出典＝各社）。見出し＋出典のみ・本文は各社サイトで。</div><a class="row" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBYd3pKYU5lSXh1MDJUM2oxRERMcXhDbVkzcmRKMktBX1BBbVlfOUU4LTdWTkxTbnJkVnZ2SjdBWWhnQndPN3hFU01vaHRtYXg0NkFBLUFHNm5IM1VIMWZjWDdKTVc?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">時事ドットコム</span><span class="tag">#半導体</span><span class="time">21分前</span></span><span class="head">画像・写真：韓国半導体ＳＫが１３％高：時事ドットコム <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMikwFBVV95cUxNOWRfSWtmQXJSel9uako2cHRFRXp0c1YtTXhLbDVwenJ3X0w4eEFxbTVjbnZ5UFJhaVhrQ3NlZzJlT1RXd25xWHVXb3p5MDM4WFd1N2tudjZ0Ml9mNlJWeFF1TmdzZGsyekdFMnpBcmd4RVdjcGR6TXFDQk9KaDU2Wmd4T2V5dUw0OElfQnVVd1F1M0E?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">TIKR.com</span><span class="tag">#決算</span><span class="time">48分前</span></span><span class="head">CVS Health Stock Is Near a 52-Week High. The Rally Isn’t Over. <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1xWGFLSGxtbUZFejlmanhvQ0U0TnJUQWlvYjFYck1yaVRyN2s5RWhmcmFpTjVZbVFwUG9DdVBrcTFBNHViZzVCR1hobExNc1VXV1dGbW4xSmZaOU5neWhnTkhhaC1tTzQ1TW85TGlMQVNQWWhN?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#AI</span><span class="time">49分前</span></span><span class="head">アマゾン、2026年の大型株で出遅れ 過去最高益とAI追い風で「割安」の声 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFAtZm5RTHhBenA1OG9oc2w0eGw5cTFvUU9xbmN1OEVRbnF3eDI4SlZrMWtlbUMzX1AxZDktTUQxbFpXRlJMdks2NmtyS2x3LUZ4ZVE?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">株探</span><span class="tag">#防衛</span><span class="time">54分前</span></span><span class="head">週間ランキング【約定回数 増加率】 (7月10日) <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yZjhvUFQyWFJXYkJWSTZ1S09wc2pFZGNRRThXbENvdzBrc2ROdmhldENZcXNpQ2haamFsYlgyb0RDWjJtbkF4ZW1QV0lWNFVpNUFTQmkycHVCNGcwVVkwYg?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Mshale</span><span class="tag">#ソフトバンクグループ</span><span class="time">1時間前</span></span><span class="head">2026-05-19 ソフトバンクグループ（9984） チャート＆板 Ufo Files (1WpECqA9Si) <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE8zMW9PbHBOQzBKdFh2U0d1cHZremlqT0FuT2ZHR2Foc3hjdVdhWkZZcUZZTmFLcXc1aE81Y1BSSmxZdDcwamtaQ2IwWWs2ZTQ2WV9kaFpaMXpHS29sNUU4SnVhdmtfdnZsbzd2QXpLQ09kZldf?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#半導体</span><span class="time">1時間前</span></span><span class="head">アップル、iPhone・Mac向けプロセッサをインテルに委託することで半導体関税100%を回避とWSJ報道 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE90UUJCdEpVODc4LUx6VzVDaXc4aHMzdHhYY3dUOWhtOVBOVm1ZRmk2MTlfU2tPY2Z2RGtQUWdVQXhZN1VRWW1hai1obGt2Sk9xaGNZQlJpSFdoZjNmRW1weWlyUXB4UFE2aG45Uk9PQlM0SEVH?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#半導体</span><span class="time">1時間前</span></span><span class="head">Galaxy S26が11万3300円、アマゾンプライムデーで17％オフ 半導体高騰前の「買い時」と話題 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tZXNjMWVURkhneE84RHNwcTRVX0RxbC1ocFhwUWtRNE5LYjFvdFctOVJ1Ujd3Y1JVdUtpUUNpTGFKQ09Ca3ljMm1xdFM2QWxHT0FiVldWdG9XYWc?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">ABEMA</span><span class="tag">#円相場</span><span class="time">1時間前</span></span><span class="head">【速報】日経平均株価 続伸で取引開始 原油先物価格の落ち着きをうけ <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE4xeFAxa3ZaWGdXaV94NEtuNDdLTTVmcC1YbnEyS1pVQjczM21pMzQ1dFdMdVYyWmlXNFJDMEVscV9maTZqWkJoTUwwR0QydVpyaUJLaTF4cEFZWTNFOGUwR3o2cjJHOEh0NUR3eUY1Q29ERnpK?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#半導体</span><span class="time">1時間前</span></span><span class="head">アップルCEOクック氏、Micronに「半導体ショック」の責任論…アップルも価格転嫁は不可避 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBwTnpKY2JodnJ6RW50cVpyNEZiUE5XbVZMNUNYbFlHMEdKU3FqUFJEc014MDRmRVUzM1pOQ2tPODctUkpxR0hSRXZTZlVYSmZCVVZXOWg2dGFwemFKYjA0dXctd2Y2Qlc1cWdyX3Y5aDh6cHk4?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#利下げ</span><span class="time">2時間前</span></span><span class="head">タイ中銀総裁、インフレ率は目標の2.8%下回る見通し、利下げの可能性は低いと指摘 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOb1lqZHNRVGhSeTJHOFFhbzlrZ1A3OF9RSjkxNFJQaFhvNmpXRVhEd2VaaVZGekdYMWZCU3d1YUk5cWJDM1JZVVdzV183SDE1aUZjc1R6MDhGTmxBSjFSSkJJZW92X1NDN3ZCRmRIOTVIWFo3Z1B1a0M3aVp0TFlQb2lyUWZEdmhMSDBHZTEteW02X0dyY3pUSWRlSUlRejM5ZUV0cTIwVWFOTmc?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">TIKR.com</span><span class="tag">#決算</span><span class="time">2時間前</span></span><span class="head">Kinder Morgan Stock Beat Estimates by a Mile. Wall Street Still Isn’t Convinced. <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPY1Yzb196ekpFbUFJR0x4Um15YTlZajNyVWRISHVuUDZpbHZyNExDWUxfcW1BZmhJamZNM0stTEhGb3ZhUHFmLUpIeWlDUi1KSVJYa0JZVlNBdEtEY0ZqY0h4aDd6REpPXzIzQ1NpcVBNNU0xZHp1aDFNdi1DaXcwYUVpMHVmdXE1MHlqUjVGSURRR3NSTmo4a2p1ZXh1b1FsTmVQeVFmX194RTQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Laodong.vn</span><span class="tag">#FRB金利</span><span class="time">3時間前</span></span><span class="head">市場が新たな試練を待つ中、金価格は岐路に立たされる <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE51XzhwOTBjdGNUVTlfSlNGNTc3Q3B6LU8ta3dNUm91dXRmTzNQdTluOXZELXpkdjBMSUQwaWVFT1hDYXF2U19wMUxfb0JzTVhFTmNnZWh5ejNHd0g1RWUxSVpzb05zWk4xcUZTNmt5VktBNWJi?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#生成AI</span><span class="time">3時間前</span></span><span class="head">IPO連騰と業績相場が交錯、来週の新興市場は内需・直近上場銘柄で選別強まる <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5YTFJhLTBDV0xTcExveVd2eVdCRHlpM29ZTGFYYTF0bGE5ZjlwNjkycVRIWjJETjRaYXZJZ2dJam1xZmhsY3dTRWw0b3BrTVRqZi1Wd2dvanVyUkd6X0ZOWmdaNHdFbTRwd2ZTckNTeGlSS3By?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#セクターローテーション</span><span class="time">3時間前</span></span><span class="head">ブルームエナジー、1000%急騰でエヌビディアと比較されるも、218ドルの目標株価が警鐘 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVy10a2NhYk5yQ3EwUVgyV3IzLUFYMWJRWmozMFV1N3k4bHEzd0I0OHMyRDBOamc0VUdTazJLUVJLeWZ1LTdmSkhOSzNJVWtPcmZLVEZ2SEJoSnVOZjhVc3BhTGpTSVZZa2ttMTcyQ292RnRoRF9JS2ZpSlp1MGd3My1tX1J0Z0h2V0RvZTZ0SnpmSWJSMjQ0OXBET294U0o4OGVfY1RhLUQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">日本経済新聞</span><span class="tag">#日経平均</span><span class="time">3時間前</span></span><span class="head">100万円でも買えない株、6割増の49銘柄 個人は1株取引に注目 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMirwNBVV95cUxPTzd2TTNhSjZieVU0eUNqaFdobEwtTFk0X1RCMlJISnZncWJzUjRWMkJ4LW1uZmpqYjlwWEZJSGpGUHpYNmV4aWtsS0pCSjBjM2hFbTJkd1VxVk1Ld092eXZSckhsTlJVallkeXBLZjlEQW5yRURFVE5CcGNPbVR4NF8wS3VSa2paM29RNXFMa2NmWHZ6ZFlfNE1JZ0J6ckkwQTN0RzVyUmJ3Y2I1SW03Z1BFS0QyMXlveHZvRXU0WnFyeENxZXpOMTM5MWZCUEItWnlFc2tZU1NvdWV0Y0E0bTJqRjhYT2NXNV9WYkpkX3VaQ3RuV0tmX2FQZGcwenQ1VGxVWTJhRUZEN3VjN2pveFk3R0duc0tiNXdlbW9ocXlUSUF1b19QNUtwQjIycTZyc2dVbTRmQl9jbjVSRk5BQ2NaVGx4VzA2LTZtd3ZLc3NDYzRJOTE1MGk3LVZ0TWdXV3BQOWl1OVRJSnQ0M0RGam9HbTFnaGsxUXhDRjZ2WG41SGU2QkNKZVNvWlFzTkRETzRiRXRMb25qSFJ1ZXpIRDdWM0tNQzBUMlJPSWVDRQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">MSN</span><span class="tag">#日経平均</span><span class="time">3時間前</span></span><span class="head">午前の日経平均は反発、半導体株が軒並み大幅高 韓国株高も支援 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBMZ2ZzaFNpTXJiQXpRbGN0YmFwTi1iX2dGVzlhQW4zRlk1SDY2aE5hNFQ0Zko4S2dpUVN4THFCVi14bV92bEg2SVhLM2otQmU2SVlUQmxobmVGTXZ3VkN3OE1rNVRjU2VQaThoVmExcFhVbXg1?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#半導体株安</span><span class="time">3時間前</span></span><span class="head">【三星ショック】好決算も株価急落、TSMC決算説明会を前にAI特需が半導体の価格決定権を塗り替える <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5IQzNCNWJBNDBpaVhiem1sY0NzOGVpNjhQVVl1RjdfNGQxVVNPOTRMSXIzS2pfdGlfMUNVUDJxX0ZYSXVCeElnV1dyeGp2a21VZmZVX2l3djlydGsz?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">YouTube</span><span class="tag">#関税</span><span class="time">3時間前</span></span><span class="head">トランプ氏合意 500％関税の対露制裁、月内にも発動 ロシアのインフレが倍 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOUphcDRsWmZBVmN1c2Z3TloxUVIzdDVIRUtjejR4SjlJOWdvVWpRSHdrRml6MTBjVm9Wcl9YS0NmTEF4cHY5YmFyd2JiNGhjeWZMTWVsOG9LdGE0Tkd1SlM4OHloMFNaOS1ZU3c1a1dCZ1pwUnJOcWoyV1NTZ2o3d0d4R3pTSFlXQmhZZURxMkwyczJJZ1ExUy1tck8tbUZ2U3ZoUFhPNmowTWM?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Laodong.vn</span><span class="tag">#FRB金利</span><span class="time">3時間前</span></span><span class="head">StoneXが下半期の金価格の新たなシナリオを指摘 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5iSjRicC1qbngyQnFtWDU4cVdDU2xQLUFOcVRvempLbVFTN1BNYXlqQUduSVM5dWY1Zy0xLW0zZ3JPdlhxTmJqNmtwYjNvb1ROVVA0VDZ3MUZCelNCY21J?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">nomura.co.jp</span><span class="tag">#防衛</span><span class="time">3時間前</span></span><span class="head">S＆P500予想、2026年末7,900に引き上げ 大型IPOへの期待と警戒が交錯 野村證券ストラテジストが解説 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5WdmZpR1dtTkZqRFJ3djQ1NU12WVZjV1JiLU1vUmZvSW5GVWgtV2FUR0UwYUZlRU9xekpIdHZfcVhZM3VkSkJZdGhSRHN1ekVNVm5nRlVGdElza0lFSzBV?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">nomura.co.jp</span><span class="tag">#日経平均</span><span class="time">3時間前</span></span><span class="head">日本株の決算前半戦を読み解く 焦点は中東情勢の逆風 vs 企業の値上げ力 野村證券ストラテジストが解説 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFAyU3BJTUFJem9vaUhDZmRsTVRWLWN0RWh5Nzc2TktmQzBmbkd0SkpjRWhBR1lqRnlIWEtER3NYMm5sc3RZRVh5dFFYY0dyNmEteWJjVFlCbjFSNUJUT24w?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">nomura.co.jp</span><span class="tag">#FRB金利</span><span class="time">3時間前</span></span><span class="head">2026年末の米ドル円見通しを152.5円に引き上げ 中東情勢で強まる米ドル高圧力 野村證券・後藤祐二朗 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMi8gRBVV95cUxPQ19wd3d3MEZOVm9XYkhCd0t2TDYtZVBLT3FfdFgtZDdqal9FYVZ1dkxqb0hpMzRfOV9NUVZVUktSbHNrZHJHcFdTQmVNS0tfNzVUZ3BfcmVVaXJNSFBsUjJQWlNpZGloakxrT00xRWFZaGZyWVpqU2F6VjJqZ0ZmNnJSYV9JQWlmQmdwU0dzRGhPTDB2bzR3dmtCWE90MWhSZlBjMjRiaGp2ckFXSXhfdk5xUjg4OEJUMmNqMmRIWkRoeTdVOEFsaTJLbzNMdUdDQnhpN1ZPM2JRR0ZwN29sLWs2S2d2ZXJibmN6bjY4eURpUUZRUE5uVlJKUUNGYzlGbVZFdEtZYl9TUXdZdTkyOVVfcUIxNzlvMFJINUREN05kVzRpZVEwTEV4VVkxYmRnZV9LYThrdWY1UXl1VV9WU3E0czN0R1BrQzRjcm11QlRGSUFLeEZzLThDWmlvWVk1amtSeHVkXzhKUUx3ZE5DLUg2VDFsOGo2OU1nLXR6Z25qcGMyWldkWVRBZkZVSHROcWJYZzJHdml4RXBCLU5PZnJ4WHJqZjIyTFRhSWVyYlJkV2U0WXdwdUJXelJXZ3M1NnItOGNNQm9aUlFzTVJlS1FhRXF3QXI2a0RJTEplcWd1b1Zvbkg3NGVSc2hLMFItb0hUc1JNQzJrS3Z1eGRKX21PcFF6clQ2bkJZUEY4U0o4STgzVEQtRXBBbmxjTW15M29JLXlyM1NFbkU1Zm0wV2JtVHBteXdid080RU1uTTRBT2FoVDVUbm1aOWhIRWVFSnBFemFrUTVYTXNtU1ZMWW1OcU1hUjBxTmhIemt4REVndw?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">MSN</span><span class="tag">#関税</span><span class="time">3時間前</span></span><span class="head">ロシア産原油・ガスの輸入国に関税 対ロ制裁強化でトランプ政権と米議会が合意 超党派の議員が推進 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9QUnJKd1UwRGZvd2FsRHZDcTB6SkRnMk4tdjFuVGFJcHE4ajNKblpLaEhSNnpxTWNrdzhDUmJYVnZONWFXejlGbzlBUlpiaFBNQjFKMHlNc3ZqbkM3ME1DSW5GMGNDczcxOVN0clhtTGoyNjEt?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#FRB金利</span><span class="time">3時間前</span></span><span class="head">トランプ大統領、イラン和平協議の継続を表明も「停戦は終了」と宣言、原油価格が急騰 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQVWxIZTN4d1BqRHhaakI0OGNtYksxeENTNngzUER4eTJNdVZiaTkzVTRKZGROVVVqa0FOWi1neWRDT1A2eGF3WXpSZnJCQU12ZVZKeVMzRFNISElTaG1BZ1pXa2c4ZGZabFl4Vk41SFV0UERkYndiTWdNd3ZlMVdzRmlwZlBHQTlBblRoVWtVNmxSTU5pWUg4S2VVLVFxRUh0dEE?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Business Insider Japan</span><span class="tag">#防衛</span><span class="time">3時間前</span></span><span class="head">「収益実現性に注目せよ」：宇宙関連株ブームの攻略方法、そしてシュティフィルが推奨する6銘柄 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFB3VEU5Tk9mU2taS00zTkNtNmZlcGNBNmFCNXh3UEhXNVZjQy1fNGQ4c0Vid3c1dDJadjRCN3NNOWdiVDNPbnBKX19odlJzcXZfdU5yYmVlM3dLMUV4cE43czJnXzJsYTZrZ2lsSVFMcG8zYjV3?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#AI</span><span class="time">3時間前</span></span><span class="head">日経平均が急反発、一時1440円高 AI・半導体に見直し買いもテクニカルは予断許さず <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1teWhmdXZhNmU3Smg1aDRvcjhqOC1KeWNoYmpja2R2WXU2dklrc0I2Q1lPb0FDM2pvZ2k5LVNWa2U5SXF2Z2ZfakNyNFplaDJVb3c?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">株探</span><span class="tag">#防衛</span><span class="time">4時間前</span></span><span class="head">今週の【株式分割】銘柄 (7月6日～10日 発表分) <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMi6ANBVV95cUxNOG5vSmNNRXMzQ0R3OHo4MGZNWU1pU1hxZ0hEa1I4Nk02SndKRUJoc01EVEFYMWZ4MVBzZ0x2UThzeV9FQmRhMEx3VGpGSE9mQWd5c1A5Ung1RmU2Zzh1Y2ZaVXFScUU2aWEyVlpJWEVyVlk5Z3BxSENIeU9OdE5ENTR0RXVFY0RlRHdycV85bDhGZE85ZWQzMW1Mbll2a0VYdkZCX01DZHFsNk4zX2NyN21PODR4R243d3VEOV85SkFPNDhZZk5TVWtocjNDdnVILTVXa2I0WmVKN1huODJfdUl1NktLdUdjQnh5UExsRlNqekJaamJnZ2lQQ1lYSmZ5OTl3X0Rsb2NXR0dGeDJESXVTTXRaeVp5bDdnalRaVjcwTkVaX2NzeThha0RVdjRQN19hWC1Bamd2SDRmRGprN0x0RVY2eXF3ZngtQzZjZzdKR2VZcVVzYlNMbUhqek83cG9GSjhCdnpULU4tbVprcGxMZF9rLU1pQnFrTkpUS25HRWhDYlFPbnhPMXlHMTNGdHJSOVBQMVRFYTBrNXhFZFRMNGZQYmdGRDdPdUh1VWd5SXp5OXBtc0tuamQ3Q3dtRFFDaXluaXM2dGx1S1JXbHU0eS1WMFlqblNMYThocG9GRk1Sdmpnbw?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">MSN</span><span class="tag">#関税</span><span class="time">4時間前</span></span><span class="head">「関税を払うくらいなら米国で作る」トヨタ、タコマ生産移管で2,000 人雇用創出へ <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9rd2QzSFpNckRrSFpUazR1TzFNeVlMVlJQSVRiN0hicmpKS3BpTnpnb0ZKcmRXeTBhc1NWVHVRdlFzZU4yMEhGUEkwR2tnYWQ0M3l5WF9XY0lWUWM?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">ABEMA</span><span class="tag">#利益確定</span><span class="time">4時間前</span></span><span class="head">日銀・企業物価指数 前年同月比＋7.1％ 中東情勢で原油・ナフサ価格高騰が影響 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5kWUFDSjhId291dUV2VkI4MGZSUzdKOEk0MFpadUZ3TzZMM2oyamhGU05lQTY5YXQwdDBhTmV5VEUxalc2Y1JybXJ6anFjMVlRTnlzQVZBY3UzMDJuZVE4?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">nomura.co.jp</span><span class="tag">#半導体株安</span><span class="time">4時間前</span></span><span class="head">金利上昇懸念で不動産株が急落 行き過ぎ感も、銀行株には追い風期待 野村證券ストラテジストが解説 <span class="ar">&#8599;</span></span></a><div class="foot">数値はカードが正・本紙は読み物／投資は自己判断</div></section><p class="meta">candidate_ranking_simple_20260711_212404.csv &nbsp;·&nbsp; 2026-07-11 &nbsp;·&nbsp; 10件</p><div class="cards" id="cardgrid">
+<section class="kabu-news"><div class="nh"><b>注目ニュース</b></div><div class="rule"></div><div class="leg">主要メディアの見出しを横断（出典＝各社）。見出し＋出典のみ・本文は各社サイトで。</div><a class="row" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBYd3pKYU5lSXh1MDJUM2oxRERMcXhDbVkzcmRKMktBX1BBbVlfOUU4LTdWTkxTbnJkVnZ2SjdBWWhnQndPN3hFU01vaHRtYXg0NkFBLUFHNm5IM1VIMWZjWDdKTVc?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">時事ドットコム</span><span class="tag">#半導体</span><span class="time">4時間前</span></span><span class="head">画像・写真：韓国半導体ＳＫが１３％高：時事ドットコム <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMikwFBVV95cUxNOWRfSWtmQXJSel9uako2cHRFRXp0c1YtTXhLbDVwenJ3X0w4eEFxbTVjbnZ5UFJhaVhrQ3NlZzJlT1RXd25xWHVXb3p5MDM4WFd1N2tudjZ0Ml9mNlJWeFF1TmdzZGsyekdFMnpBcmd4RVdjcGR6TXFDQk9KaDU2Wmd4T2V5dUw0OElfQnVVd1F1M0E?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">TIKR.com</span><span class="tag">#決算</span><span class="time">5時間前</span></span><span class="head">CVS Health Stock Is Near a 52-Week High. The Rally Isn’t Over. <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1xWGFLSGxtbUZFejlmanhvQ0U0TnJUQWlvYjFYck1yaVRyN2s5RWhmcmFpTjVZbVFwUG9DdVBrcTFBNHViZzVCR1hobExNc1VXV1dGbW4xSmZaOU5neWhnTkhhaC1tTzQ1TW85TGlMQVNQWWhN?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#AI</span><span class="time">5時間前</span></span><span class="head">アマゾン、2026年の大型株で出遅れ 過去最高益とAI追い風で「割安」の声 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFAtZm5RTHhBenA1OG9oc2w0eGw5cTFvUU9xbmN1OEVRbnF3eDI4SlZrMWtlbUMzX1AxZDktTUQxbFpXRlJMdks2NmtyS2x3LUZ4ZVE?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">株探</span><span class="tag">#防衛</span><span class="time">5時間前</span></span><span class="head">週間ランキング【約定回数 増加率】 (7月10日) <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yZjhvUFQyWFJXYkJWSTZ1S09wc2pFZGNRRThXbENvdzBrc2ROdmhldENZcXNpQ2haamFsYlgyb0RDWjJtbkF4ZW1QV0lWNFVpNUFTQmkycHVCNGcwVVkwYg?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Mshale</span><span class="tag">#ソフトバンクグループ</span><span class="time">5時間前</span></span><span class="head">2026-05-19 ソフトバンクグループ（9984） チャート＆板 Ufo Files (1WpECqA9Si) <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE8zMW9PbHBOQzBKdFh2U0d1cHZremlqT0FuT2ZHR2Foc3hjdVdhWkZZcUZZTmFLcXc1aE81Y1BSSmxZdDcwamtaQ2IwWWs2ZTQ2WV9kaFpaMXpHS29sNUU4SnVhdmtfdnZsbzd2QXpLQ09kZldf?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#半導体</span><span class="time">5時間前</span></span><span class="head">アップル、iPhone・Mac向けプロセッサをインテルに委託することで半導体関税100%を回避とWSJ報道 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE90UUJCdEpVODc4LUx6VzVDaXc4aHMzdHhYY3dUOWhtOVBOVm1ZRmk2MTlfU2tPY2Z2RGtQUWdVQXhZN1VRWW1hai1obGt2Sk9xaGNZQlJpSFdoZjNmRW1weWlyUXB4UFE2aG45Uk9PQlM0SEVH?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#半導体</span><span class="time">6時間前</span></span><span class="head">Galaxy S26が11万3300円、アマゾンプライムデーで17％オフ 半導体高騰前の「買い時」と話題 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tZXNjMWVURkhneE84RHNwcTRVX0RxbC1ocFhwUWtRNE5LYjFvdFctOVJ1Ujd3Y1JVdUtpUUNpTGFKQ09Ca3ljMm1xdFM2QWxHT0FiVldWdG9XYWc?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">ABEMA</span><span class="tag">#円相場</span><span class="time">6時間前</span></span><span class="head">【速報】日経平均株価 続伸で取引開始 原油先物価格の落ち着きをうけ <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE4xeFAxa3ZaWGdXaV94NEtuNDdLTTVmcC1YbnEyS1pVQjczM21pMzQ1dFdMdVYyWmlXNFJDMEVscV9maTZqWkJoTUwwR0QydVpyaUJLaTF4cEFZWTNFOGUwR3o2cjJHOEh0NUR3eUY1Q29ERnpK?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#半導体</span><span class="time">6時間前</span></span><span class="head">アップルCEOクック氏、Micronに「半導体ショック」の責任論…アップルも価格転嫁は不可避 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBwTnpKY2JodnJ6RW50cVpyNEZiUE5XbVZMNUNYbFlHMEdKU3FqUFJEc014MDRmRVUzM1pOQ2tPODctUkpxR0hSRXZTZlVYSmZCVVZXOWg2dGFwemFKYjA0dXctd2Y2Qlc1cWdyX3Y5aDh6cHk4?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#利下げ</span><span class="time">6時間前</span></span><span class="head">タイ中銀総裁、インフレ率は目標の2.8%下回る見通し、利下げの可能性は低いと指摘 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOb1lqZHNRVGhSeTJHOFFhbzlrZ1A3OF9RSjkxNFJQaFhvNmpXRVhEd2VaaVZGekdYMWZCU3d1YUk5cWJDM1JZVVdzV183SDE1aUZjc1R6MDhGTmxBSjFSSkJJZW92X1NDN3ZCRmRIOTVIWFo3Z1B1a0M3aVp0TFlQb2lyUWZEdmhMSDBHZTEteW02X0dyY3pUSWRlSUlRejM5ZUV0cTIwVWFOTmc?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">TIKR.com</span><span class="tag">#決算</span><span class="time">7時間前</span></span><span class="head">Kinder Morgan Stock Beat Estimates by a Mile. Wall Street Still Isn’t Convinced. <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPY1Yzb196ekpFbUFJR0x4Um15YTlZajNyVWRISHVuUDZpbHZyNExDWUxfcW1BZmhJamZNM0stTEhGb3ZhUHFmLUpIeWlDUi1KSVJYa0JZVlNBdEtEY0ZqY0h4aDd6REpPXzIzQ1NpcVBNNU0xZHp1aDFNdi1DaXcwYUVpMHVmdXE1MHlqUjVGSURRR3NSTmo4a2p1ZXh1b1FsTmVQeVFmX194RTQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Laodong.vn</span><span class="tag">#FRB金利</span><span class="time">7時間前</span></span><span class="head">市場が新たな試練を待つ中、金価格は岐路に立たされる <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE51XzhwOTBjdGNUVTlfSlNGNTc3Q3B6LU8ta3dNUm91dXRmTzNQdTluOXZELXpkdjBMSUQwaWVFT1hDYXF2U19wMUxfb0JzTVhFTmNnZWh5ejNHd0g1RWUxSVpzb05zWk4xcUZTNmt5VktBNWJi?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#生成AI</span><span class="time">7時間前</span></span><span class="head">IPO連騰と業績相場が交錯、来週の新興市場は内需・直近上場銘柄で選別強まる <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5YTFJhLTBDV0xTcExveVd2eVdCRHlpM29ZTGFYYTF0bGE5ZjlwNjkycVRIWjJETjRaYXZJZ2dJam1xZmhsY3dTRWw0b3BrTVRqZi1Wd2dvanVyUkd6X0ZOWmdaNHdFbTRwd2ZTckNTeGlSS3By?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#セクターローテーション</span><span class="time">7時間前</span></span><span class="head">ブルームエナジー、1000%急騰でエヌビディアと比較されるも、218ドルの目標株価が警鐘 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVy10a2NhYk5yQ3EwUVgyV3IzLUFYMWJRWmozMFV1N3k4bHEzd0I0OHMyRDBOamc0VUdTazJLUVJLeWZ1LTdmSkhOSzNJVWtPcmZLVEZ2SEJoSnVOZjhVc3BhTGpTSVZZa2ttMTcyQ292RnRoRF9JS2ZpSlp1MGd3My1tX1J0Z0h2V0RvZTZ0SnpmSWJSMjQ0OXBET294U0o4OGVfY1RhLUQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">日本経済新聞</span><span class="tag">#日経平均</span><span class="time">7時間前</span></span><span class="head">100万円でも買えない株、6割増の49銘柄 個人は1株取引に注目 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMirwNBVV95cUxPTzd2TTNhSjZieVU0eUNqaFdobEwtTFk0X1RCMlJISnZncWJzUjRWMkJ4LW1uZmpqYjlwWEZJSGpGUHpYNmV4aWtsS0pCSjBjM2hFbTJkd1VxVk1Ld092eXZSckhsTlJVallkeXBLZjlEQW5yRURFVE5CcGNPbVR4NF8wS3VSa2paM29RNXFMa2NmWHZ6ZFlfNE1JZ0J6ckkwQTN0RzVyUmJ3Y2I1SW03Z1BFS0QyMXlveHZvRXU0WnFyeENxZXpOMTM5MWZCUEItWnlFc2tZU1NvdWV0Y0E0bTJqRjhYT2NXNV9WYkpkX3VaQ3RuV0tmX2FQZGcwenQ1VGxVWTJhRUZEN3VjN2pveFk3R0duc0tiNXdlbW9ocXlUSUF1b19QNUtwQjIycTZyc2dVbTRmQl9jbjVSRk5BQ2NaVGx4VzA2LTZtd3ZLc3NDYzRJOTE1MGk3LVZ0TWdXV3BQOWl1OVRJSnQ0M0RGam9HbTFnaGsxUXhDRjZ2WG41SGU2QkNKZVNvWlFzTkRETzRiRXRMb25qSFJ1ZXpIRDdWM0tNQzBUMlJPSWVDRQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">MSN</span><span class="tag">#日経平均</span><span class="time">7時間前</span></span><span class="head">午前の日経平均は反発、半導体株が軒並み大幅高 韓国株高も支援 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBMZ2ZzaFNpTXJiQXpRbGN0YmFwTi1iX2dGVzlhQW4zRlk1SDY2aE5hNFQ0Zko4S2dpUVN4THFCVi14bV92bEg2SVhLM2otQmU2SVlUQmxobmVGTXZ3VkN3OE1rNVRjU2VQaThoVmExcFhVbXg1?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#半導体株安</span><span class="time">7時間前</span></span><span class="head">【三星ショック】好決算も株価急落、TSMC決算説明会を前にAI特需が半導体の価格決定権を塗り替える <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5IQzNCNWJBNDBpaVhiem1sY0NzOGVpNjhQVVl1RjdfNGQxVVNPOTRMSXIzS2pfdGlfMUNVUDJxX0ZYSXVCeElnV1dyeGp2a21VZmZVX2l3djlydGsz?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">YouTube</span><span class="tag">#関税</span><span class="time">7時間前</span></span><span class="head">トランプ氏合意 500％関税の対露制裁、月内にも発動 ロシアのインフレが倍 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOUphcDRsWmZBVmN1c2Z3TloxUVIzdDVIRUtjejR4SjlJOWdvVWpRSHdrRml6MTBjVm9Wcl9YS0NmTEF4cHY5YmFyd2JiNGhjeWZMTWVsOG9LdGE0Tkd1SlM4OHloMFNaOS1ZU3c1a1dCZ1pwUnJOcWoyV1NTZ2o3d0d4R3pTSFlXQmhZZURxMkwyczJJZ1ExUy1tck8tbUZ2U3ZoUFhPNmowTWM?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Laodong.vn</span><span class="tag">#FRB金利</span><span class="time">7時間前</span></span><span class="head">StoneXが下半期の金価格の新たなシナリオを指摘 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5iSjRicC1qbngyQnFtWDU4cVdDU2xQLUFOcVRvempLbVFTN1BNYXlqQUduSVM5dWY1Zy0xLW0zZ3JPdlhxTmJqNmtwYjNvb1ROVVA0VDZ3MUZCelNCY21J?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">nomura.co.jp</span><span class="tag">#防衛</span><span class="time">8時間前</span></span><span class="head">S＆P500予想、2026年末7,900に引き上げ 大型IPOへの期待と警戒が交錯 野村證券ストラテジストが解説 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5WdmZpR1dtTkZqRFJ3djQ1NU12WVZjV1JiLU1vUmZvSW5GVWgtV2FUR0UwYUZlRU9xekpIdHZfcVhZM3VkSkJZdGhSRHN1ekVNVm5nRlVGdElza0lFSzBV?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">nomura.co.jp</span><span class="tag">#日経平均</span><span class="time">8時間前</span></span><span class="head">日本株の決算前半戦を読み解く 焦点は中東情勢の逆風 vs 企業の値上げ力 野村證券ストラテジストが解説 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFAyU3BJTUFJem9vaUhDZmRsTVRWLWN0RWh5Nzc2TktmQzBmbkd0SkpjRWhBR1lqRnlIWEtER3NYMm5sc3RZRVh5dFFYY0dyNmEteWJjVFlCbjFSNUJUT24w?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">nomura.co.jp</span><span class="tag">#FRB金利</span><span class="time">8時間前</span></span><span class="head">2026年末の米ドル円見通しを152.5円に引き上げ 中東情勢で強まる米ドル高圧力 野村證券・後藤祐二朗 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMi8gRBVV95cUxPQ19wd3d3MEZOVm9XYkhCd0t2TDYtZVBLT3FfdFgtZDdqal9FYVZ1dkxqb0hpMzRfOV9NUVZVUktSbHNrZHJHcFdTQmVNS0tfNzVUZ3BfcmVVaXJNSFBsUjJQWlNpZGloakxrT00xRWFZaGZyWVpqU2F6VjJqZ0ZmNnJSYV9JQWlmQmdwU0dzRGhPTDB2bzR3dmtCWE90MWhSZlBjMjRiaGp2ckFXSXhfdk5xUjg4OEJUMmNqMmRIWkRoeTdVOEFsaTJLbzNMdUdDQnhpN1ZPM2JRR0ZwN29sLWs2S2d2ZXJibmN6bjY4eURpUUZRUE5uVlJKUUNGYzlGbVZFdEtZYl9TUXdZdTkyOVVfcUIxNzlvMFJINUREN05kVzRpZVEwTEV4VVkxYmRnZV9LYThrdWY1UXl1VV9WU3E0czN0R1BrQzRjcm11QlRGSUFLeEZzLThDWmlvWVk1amtSeHVkXzhKUUx3ZE5DLUg2VDFsOGo2OU1nLXR6Z25qcGMyWldkWVRBZkZVSHROcWJYZzJHdml4RXBCLU5PZnJ4WHJqZjIyTFRhSWVyYlJkV2U0WXdwdUJXelJXZ3M1NnItOGNNQm9aUlFzTVJlS1FhRXF3QXI2a0RJTEplcWd1b1Zvbkg3NGVSc2hLMFItb0hUc1JNQzJrS3Z1eGRKX21PcFF6clQ2bkJZUEY4U0o4STgzVEQtRXBBbmxjTW15M29JLXlyM1NFbkU1Zm0wV2JtVHBteXdid080RU1uTTRBT2FoVDVUbm1aOWhIRWVFSnBFemFrUTVYTXNtU1ZMWW1OcU1hUjBxTmhIemt4REVndw?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">MSN</span><span class="tag">#関税</span><span class="time">8時間前</span></span><span class="head">ロシア産原油・ガスの輸入国に関税 対ロ制裁強化でトランプ政権と米議会が合意 超党派の議員が推進 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9QUnJKd1UwRGZvd2FsRHZDcTB6SkRnMk4tdjFuVGFJcHE4ajNKblpLaEhSNnpxTWNrdzhDUmJYVnZONWFXejlGbzlBUlpiaFBNQjFKMHlNc3ZqbkM3ME1DSW5GMGNDczcxOVN0clhtTGoyNjEt?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#FRB金利</span><span class="time">8時間前</span></span><span class="head">トランプ大統領、イラン和平協議の継続を表明も「停戦は終了」と宣言、原油価格が急騰 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQVWxIZTN4d1BqRHhaakI0OGNtYksxeENTNngzUER4eTJNdVZiaTkzVTRKZGROVVVqa0FOWi1neWRDT1A2eGF3WXpSZnJCQU12ZVZKeVMzRFNISElTaG1BZ1pXa2c4ZGZabFl4Vk41SFV0UERkYndiTWdNd3ZlMVdzRmlwZlBHQTlBblRoVWtVNmxSTU5pWUg4S2VVLVFxRUh0dEE?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Business Insider Japan</span><span class="tag">#防衛</span><span class="time">8時間前</span></span><span class="head">「収益実現性に注目せよ」：宇宙関連株ブームの攻略方法、そしてシュティフィルが推奨する6銘柄 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFB3VEU5Tk9mU2taS00zTkNtNmZlcGNBNmFCNXh3UEhXNVZjQy1fNGQ4c0Vid3c1dDJadjRCN3NNOWdiVDNPbnBKX19odlJzcXZfdU5yYmVlM3dLMUV4cE43czJnXzJsYTZrZ2lsSVFMcG8zYjV3?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#AI</span><span class="time">8時間前</span></span><span class="head">日経平均が急反発、一時1440円高 AI・半導体に見直し買いもテクニカルは予断許さず <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1teWhmdXZhNmU3Smg1aDRvcjhqOC1KeWNoYmpja2R2WXU2dklrc0I2Q1lPb0FDM2pvZ2k5LVNWa2U5SXF2Z2ZfakNyNFplaDJVb3c?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">株探</span><span class="tag">#防衛</span><span class="time">8時間前</span></span><span class="head">今週の【株式分割】銘柄 (7月6日～10日 発表分) <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMi6ANBVV95cUxNOG5vSmNNRXMzQ0R3OHo4MGZNWU1pU1hxZ0hEa1I4Nk02SndKRUJoc01EVEFYMWZ4MVBzZ0x2UThzeV9FQmRhMEx3VGpGSE9mQWd5c1A5Ung1RmU2Zzh1Y2ZaVXFScUU2aWEyVlpJWEVyVlk5Z3BxSENIeU9OdE5ENTR0RXVFY0RlRHdycV85bDhGZE85ZWQzMW1Mbll2a0VYdkZCX01DZHFsNk4zX2NyN21PODR4R243d3VEOV85SkFPNDhZZk5TVWtocjNDdnVILTVXa2I0WmVKN1huODJfdUl1NktLdUdjQnh5UExsRlNqekJaamJnZ2lQQ1lYSmZ5OTl3X0Rsb2NXR0dGeDJESXVTTXRaeVp5bDdnalRaVjcwTkVaX2NzeThha0RVdjRQN19hWC1Bamd2SDRmRGprN0x0RVY2eXF3ZngtQzZjZzdKR2VZcVVzYlNMbUhqek83cG9GSjhCdnpULU4tbVprcGxMZF9rLU1pQnFrTkpUS25HRWhDYlFPbnhPMXlHMTNGdHJSOVBQMVRFYTBrNXhFZFRMNGZQYmdGRDdPdUh1VWd5SXp5OXBtc0tuamQ3Q3dtRFFDaXluaXM2dGx1S1JXbHU0eS1WMFlqblNMYThocG9GRk1Sdmpnbw?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">MSN</span><span class="tag">#関税</span><span class="time">8時間前</span></span><span class="head">「関税を払うくらいなら米国で作る」トヨタ、タコマ生産移管で2,000 人雇用創出へ <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9rd2QzSFpNckRrSFpUazR1TzFNeVlMVlJQSVRiN0hicmpKS3BpTnpnb0ZKcmRXeTBhc1NWVHVRdlFzZU4yMEhGUEkwR2tnYWQ0M3l5WF9XY0lWUWM?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">ABEMA</span><span class="tag">#利益確定</span><span class="time">9時間前</span></span><span class="head">日銀・企業物価指数 前年同月比＋7.1％ 中東情勢で原油・ナフサ価格高騰が影響 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5kWUFDSjhId291dUV2VkI4MGZSUzdKOEk0MFpadUZ3TzZMM2oyamhGU05lQTY5YXQwdDBhTmV5VEUxalc2Y1JybXJ6anFjMVlRTnlzQVZBY3UzMDJuZVE4?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">nomura.co.jp</span><span class="tag">#半導体株安</span><span class="time">9時間前</span></span><span class="head">金利上昇懸念で不動産株が急落 行き過ぎ感も、銀行株には追い風期待 野村證券ストラテジストが解説 <span class="ar">&#8599;</span></span></a><div class="foot">数値はカードが正・本紙は読み物／投資は自己判断</div></section><p class="meta">candidate_ranking_simple_20260711_212404.csv &nbsp;·&nbsp; 2026-07-11 &nbsp;·&nbsp; 10件</p><div class="cards" id="cardgrid">
 <div class="card" data-judge="buy" data-rank="1.0" data-score="15.0" data-change="4.42" data-risk="1" data-uwick="0" data-lwick="0" data-uw="1.28" data-lw="0.6" data-streak="1" data-theme="" data-sector="素材・化学">
   <div class="card-head">
     <div class="card-head-left">
@@ -32140,7 +34892,7 @@ function wrSwitchWeek(w){
 <div class='table-wrap'><table class='md-table'><thead><tr><th>ラベル</th><th>件数</th><th>平均excess_5d</th></tr></thead><tbody><tr><td>大きく失敗</td><td>40</td><td>-7.07%</td></tr><tr><td>要注意</td><td>7</td><td>+0.59%</td></tr><tr><td>失敗</td><td>6</td><td>+2.39%</td></tr><tr><td>成功</td><td>5</td><td>+7.48%</td></tr><tr><td>普通</td><td>2</td><td>+6.43%</td></tr></tbody></table></div>
 <h2>3. 解釈メモ（自動）</h2>
 <ul><li>完了60件は 2026-06-01〜06-05 の5営業日に集中し、ほぼ同一地合いを共有する。独立サンプルではない。</li><li>逆U字型のパターンや上位帯（スコア9以上）の劣後は、重みの欠陥ではなくこの週特有の値動きの反映の可能性が高い。</li><li>重み見直しの結論は出せない。期間を分散させた継続観測（最低でも複数週・できれば異なる地合いをまたぐ）が前提。</li><li>現時点の本レポートの役割は「継続観測の起点」であり、本体の重み変更は行わない。</li><li>補正前後比較・スイング帯・指標別（信用/空売り/出来高/IR）は、score_after_jq/swing_score が performance に無い、または candidate_history.csv の列ズレ未修正のため v1 では非対象。ranking_simple 結合・history 修正後に v2 で対応。</li></ul></div>
-</section><footer>generated 2026-07-11 21:24:41 · snapshot (read-only)</footer></div><script>function vt(a){var sec=a.parentNode.getAttribute('data-sec');var v=a.getAttribute('data-v');document.querySelectorAll('.vtoggle[data-sec="'+sec+'"] a').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-v')===v);});document.querySelectorAll('.subpane[data-sec="'+sec+'"]').forEach(function(p){if(p.getAttribute('data-v')===v){p.removeAttribute('data-hide');}else{p.setAttribute('data-hide','1');}});}</script>
+</section><footer>generated 2026-07-12 01:50:37 · snapshot (read-only)</footer></div><script>function vt(a){var sec=a.parentNode.getAttribute('data-sec');var v=a.getAttribute('data-v');document.querySelectorAll('.vtoggle[data-sec="'+sec+'"] a').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-v')===v);});document.querySelectorAll('.subpane[data-sec="'+sec+'"]').forEach(function(p){if(p.getAttribute('data-v')===v){p.removeAttribute('data-hide');}else{p.setAttribute('data-hide','1');}});}</script>
 <script>
 (function(){
   var ids=["daily_ranking","flow","buy","caution","watch","ir","events","margin_ranking","ranking","splits","edinet","history","result","report"];

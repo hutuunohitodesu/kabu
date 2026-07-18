@@ -24114,6 +24114,7 @@ function drSwitchDate(d){
 .if-alert-card .edn-ratio { font-size: 12px; color: #7fd4c1; margin-top: 2px; }
 .if-alert-card .edn-ratio b { color: #a8ecd9; }
 .if-alert-card .edn-reason { font-size: 11px; color: #888; margin-top: 2px; }
+.if-alert-badge-short { background: #e34948; color: #fff; }
 </style>
 <div class="if-section">
   <div class="if-ctl"><label>週選択<select id="if-week-select" onchange="ifSwitchWeek(this.value)"><option value="2026-07-03" selected>2026-07-03</option><option value="2026-06-26">2026-06-26</option><option value="2026-06-19">2026-06-19</option><option value="2026-06-12">2026-06-12</option><option value="2026-06-05">2026-06-05</option><option value="2026-05-29">2026-05-29</option><option value="2026-05-22">2026-05-22</option><option value="2026-05-15">2026-05-15</option></select></label></div>
@@ -24165,6 +24166,33 @@ function drSwitchDate(d){
 </div>
 <div class="if-alert-card">
   <div class="if-alert-head">
+    <span class="if-alert-badge">空売り新規</span>
+    <span class="if-alert-issuer">446A ノースサンド</span>
+  </div>
+  <div class="if-alert-detail">0.5%以上の報告なし → 空売り残高低め</div>
+  <div class="if-alert-detail">合計空売り比率 <b>0.5%</b>／報告: GOLDMAN SACHS INTERNATIONAL</div>
+  <div class="if-alert-date">2026-07-03</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge if-alert-badge-short">空売り急増</span>
+    <span class="if-alert-issuer">2962 テクニスコ</span>
+  </div>
+  <div class="if-alert-detail">空売り残高やや多い → 空売り残高多い</div>
+  <div class="if-alert-detail">合計空売り比率 <b>3.17%</b>／報告: GOLDMAN SACHS INTERNATIONAL</div>
+  <div class="if-alert-date">2026-07-03</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge if-alert-badge-short">空売り急増</span>
+    <span class="if-alert-issuer">6976 太陽誘電</span>
+  </div>
+  <div class="if-alert-detail">空売り残高やや多い → 空売り残高多い</div>
+  <div class="if-alert-detail">合計空売り比率 <b>3.24%</b>／報告: Barclays Capital Securities Ltd</div>
+  <div class="if-alert-date">2026-07-03</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
     <span class="if-alert-badge">変更報告</span>
     <span class="if-alert-issuer">6302 住友重機械工業株式会社</span>
   </div>
@@ -24187,31 +24215,204 @@ function drSwitchDate(d){
   <div class="if-stats"><div class="if-stat if-sell"><span class="if-stat-label">海外投資家</span><span class="if-stat-val">-12,086.0億円</span></div><div class="if-stat if-buy"><span class="if-stat-label">個人投資家</span><span class="if-stat-val">+9,116.0億円</span></div><div class="if-stat if-buy"><span class="if-stat-label">信託銀行</span><span class="if-stat-val">+292.0億円</span></div></div>
   <div class="if-comment">海外投資家は12,086億円の大幅売り越し。同週はSOX指数が-6.3%と急落し、米10年債利回りも+10bp上昇しており、海外勢の売りは「金利上昇局面でのグロース・半導体売り」という典型的な構図と一致する。<br><br>一方、個人投資家は9,116億円の大幅買い越しで、海外勢の売りをほぼ吸収する規模。ソニーがプレイステーション新作ソフトのディスク生産終了を発表するなど、日本の大手テック企業側も事業モデルの転換が進んでおり、市場全体としてはハード依存からの脱却が進む局面。信託銀行は292億円の小幅買い越しにとどまり、機関投資家は静観ムード。<br><br>私の見立てでは、今週は「海外勢の半導体警戒売り」を「個人の押し目買い」で支えている構図であり、まだ底打ちと判断するには早い。業種別空売り比率で電気機器が33業種中最も低い（45.0%）のは、少なくとも空売りが積み上がって崩れているわけではないという点で悪材料出尽くしではないものの、致命的な需給悪化でもないと見ている。半導体関連の新規買いは、地合い（やや弱気・スコア-3）とSOXの下落トレンドが止まるのを確認してからでも遅くないというのが現時点の判断。<br><br>※投資判断は自己責任でお願いします。上記は参考情報であり、売買を推奨するものではありません。</div>
 </div>
-</div><div class="if-week" data-week="2026-06-19" style="display:none">
+
+<div class="if-alert-section">
+  <div class="if-alert-section-title">機関投資家 開示アラート（今週・ウォッチリスト該当）</div>
+  
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge if-alert-badge-short">空売り急増</span>
+    <span class="if-alert-issuer">6997 日本ケミコン</span>
+  </div>
+  <div class="if-alert-detail">空売り残高やや多い → 空売り残高多い</div>
+  <div class="if-alert-detail">合計空売り比率 <b>3.13%</b>／報告: Barclays Capital Securities Ltd</div>
+  <div class="if-alert-date">2026-06-26</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge">空売り新規</span>
+    <span class="if-alert-issuer">7701 島津製作所</span>
+  </div>
+  <div class="if-alert-detail">0.5%以上の報告なし → 空売り残高低め</div>
+  <div class="if-alert-detail">合計空売り比率 <b>0.59%</b>／報告: Barclays Capital Securities Ltd</div>
+  <div class="if-alert-date">2026-06-26</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge">空売り新規</span>
+    <span class="if-alert-issuer">7729 東京精密</span>
+  </div>
+  <div class="if-alert-detail">0.5%以上の報告なし → 空売り残高低め</div>
+  <div class="if-alert-detail">合計空売り比率 <b>0.75%</b>／報告: Nomura International plc</div>
+  <div class="if-alert-date">2026-06-26</div>
+</div>
+</div></div><div class="if-week" data-week="2026-06-19" style="display:none">
 <div class="if-card">
   <div class="if-card-title">2026-06-19 週（東証プライム・金額ベース）</div>
   <div class="if-stats"><div class="if-stat if-buy"><span class="if-stat-label">海外投資家</span><span class="if-stat-val">+10,680.7億円</span></div><div class="if-stat if-sell"><span class="if-stat-label">個人投資家</span><span class="if-stat-val">-4,701.2億円</span></div><div class="if-stat if-sell"><span class="if-stat-label">信託銀行</span><span class="if-stat-val">-1,347.1億円</span></div></div>
   <div class="if-comment">海外投資家が一転して10,680.7億円の大幅買い越し。個人は4,701.2億円の売り越しに転じており、利益確定売りが出た可能性がある。<br><br>海外主導の反発局面だったとみられるが、翌週（6月第4週）には海外勢が再び大幅売り越しに転じており、週によるブレが大きい点には留意したい。<br><br>※投資判断は自己責任でお願いします。</div>
 </div>
-</div><div class="if-week" data-week="2026-06-12" style="display:none">
+
+<div class="if-alert-section">
+  <div class="if-alert-section-title">機関投資家 開示アラート（今週・ウォッチリスト該当）</div>
+  
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge if-alert-badge-short">空売り急増</span>
+    <span class="if-alert-issuer">278A Ｔｅｒｒａ　Ｄｒｏｎｅ</span>
+  </div>
+  <div class="if-alert-detail">空売り残高やや多い → 空売り残高多い</div>
+  <div class="if-alert-detail">合計空売り比率 <b>3.53%</b>／報告: モルガン・スタンレーMUFG証券株式会社</div>
+  <div class="if-alert-date">2026-06-19</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge">空売り新規</span>
+    <span class="if-alert-issuer">1951 エクシオグループ</span>
+  </div>
+  <div class="if-alert-detail">0.5%以上の報告なし → 空売り残高低め</div>
+  <div class="if-alert-detail">合計空売り比率 <b>0.55%</b>／報告: Nomura International plc</div>
+  <div class="if-alert-date">2026-06-19</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge">空売り新規</span>
+    <span class="if-alert-issuer">5016 ＪＸ金属</span>
+  </div>
+  <div class="if-alert-detail">0.5%以上の報告なし → 空売り残高低め</div>
+  <div class="if-alert-detail">合計空売り比率 <b>0.53%</b>／報告: Barclays Capital Securities Ltd</div>
+  <div class="if-alert-date">2026-06-19</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge">空売り新規</span>
+    <span class="if-alert-issuer">6787 メイコー</span>
+  </div>
+  <div class="if-alert-detail">0.5%以上の報告なし → 空売り残高低め</div>
+  <div class="if-alert-detail">合計空売り比率 <b>0.54%</b>／報告: Barclays Capital Securities Ltd</div>
+  <div class="if-alert-date">2026-06-19</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge">空売り新規</span>
+    <span class="if-alert-issuer">7974 任天堂</span>
+  </div>
+  <div class="if-alert-detail">0.5%以上の報告なし → 空売り残高低め</div>
+  <div class="if-alert-detail">合計空売り比率 <b>0.5%</b>／報告: MERRILL LYNCH INTERNATIONAL</div>
+  <div class="if-alert-date">2026-06-19</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge if-alert-badge-short">空売り急増</span>
+    <span class="if-alert-issuer">9684 スクエニHD</span>
+  </div>
+  <div class="if-alert-detail">空売り残高やや多い → 空売り残高多い</div>
+  <div class="if-alert-detail">合計空売り比率 <b>3.45%</b>／報告: Morgan Stanley &amp; Co. International plc</div>
+  <div class="if-alert-date">2026-06-19</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge">空売り新規</span>
+    <span class="if-alert-issuer">6627 テラプローブ</span>
+  </div>
+  <div class="if-alert-detail">0.5%以上の報告なし → 空売り残高低め</div>
+  <div class="if-alert-detail">合計空売り比率 <b>0.54%</b>／報告: Barclays Capital Securities Ltd</div>
+  <div class="if-alert-date">2026-06-19</div>
+</div>
+</div></div><div class="if-week" data-week="2026-06-12" style="display:none">
 <div class="if-card">
   <div class="if-card-title">2026-06-12 週（東証プライム・金額ベース）</div>
   <div class="if-stats"><div class="if-stat if-sell"><span class="if-stat-label">海外投資家</span><span class="if-stat-val">-4,871.2億円</span></div><div class="if-stat if-sell"><span class="if-stat-label">個人投資家</span><span class="if-stat-val">-5,250.5億円</span></div><div class="if-stat if-sell"><span class="if-stat-label">信託銀行</span><span class="if-stat-val">-21.0億円</span></div></div>
   <div class="if-comment">海外投資家（-4,871.2億円）・個人（-5,250.5億円）がともに大幅売り越しとなり、直近8週の中で最も需給が悪化した週。<br><br>信託銀行はほぼ横ばい（-21.0億円）で、機関投資家全体としては様子見が強かったとみられる。<br><br>※投資判断は自己責任でお願いします。</div>
 </div>
-</div><div class="if-week" data-week="2026-06-05" style="display:none">
+
+<div class="if-alert-section">
+  <div class="if-alert-section-title">機関投資家 開示アラート（今週・ウォッチリスト該当）</div>
+  
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge if-alert-badge-short">空売り急増</span>
+    <span class="if-alert-issuer">6590 芝浦メカトロニクス</span>
+  </div>
+  <div class="if-alert-detail">空売り残高やや多い → 空売り残高多い</div>
+  <div class="if-alert-detail">合計空売り比率 <b>3.19%</b>／報告: GOLDMAN SACHS INTERNATIONAL</div>
+  <div class="if-alert-date">2026-06-12</div>
+</div>
+</div></div><div class="if-week" data-week="2026-06-05" style="display:none">
 <div class="if-card">
   <div class="if-card-title">2026-06-05 週（東証プライム・金額ベース）</div>
   <div class="if-stats"><div class="if-stat if-sell"><span class="if-stat-label">海外投資家</span><span class="if-stat-val">-656.0億円</span></div><div class="if-stat if-buy"><span class="if-stat-label">個人投資家</span><span class="if-stat-val">+2,985.6億円</span></div><div class="if-stat if-sell"><span class="if-stat-label">信託銀行</span><span class="if-stat-val">-284.6億円</span></div></div>
   <div class="if-comment">海外投資家は656.0億円の小幅売り越しが続く一方、個人は2,985.6億円と大きく買い越し。押し目買いの動きが強まった週とみられる。<br><br>※投資判断は自己責任でお願いします。</div>
 </div>
-</div><div class="if-week" data-week="2026-05-29" style="display:none">
+
+<div class="if-alert-section">
+  <div class="if-alert-section-title">機関投資家 開示アラート（今週・ウォッチリスト該当）</div>
+  
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge if-alert-badge-short">空売り急増</span>
+    <span class="if-alert-issuer">6323 ローツェ</span>
+  </div>
+  <div class="if-alert-detail">空売り残高やや多い → 空売り残高多い</div>
+  <div class="if-alert-detail">合計空売り比率 <b>3.39%</b>／報告: モルガン・スタンレーMUFG証券株式会社</div>
+  <div class="if-alert-date">2026-06-05</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge if-alert-badge-short">空売り急増</span>
+    <span class="if-alert-issuer">5801 古河電気工業</span>
+  </div>
+  <div class="if-alert-detail">空売り残高やや多い → 空売り残高多い</div>
+  <div class="if-alert-detail">合計空売り比率 <b>3.0%</b>／報告: Barclays Bank PLC</div>
+  <div class="if-alert-date">2026-06-05</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge if-alert-badge-short">空売り急増</span>
+    <span class="if-alert-issuer">6597 ＨＰＣシステムズ</span>
+  </div>
+  <div class="if-alert-detail">空売り残高やや多い → 空売り残高多い</div>
+  <div class="if-alert-detail">合計空売り比率 <b>3.92%</b>／報告: Barclays Capital Securities Ltd</div>
+  <div class="if-alert-date">2026-06-05</div>
+</div>
+</div></div><div class="if-week" data-week="2026-05-29" style="display:none">
 <div class="if-card">
   <div class="if-card-title">2026-05-29 週（東証プライム・金額ベース）</div>
   <div class="if-stats"><div class="if-stat if-sell"><span class="if-stat-label">海外投資家</span><span class="if-stat-val">-3,572.2億円</span></div><div class="if-stat if-buy"><span class="if-stat-label">個人投資家</span><span class="if-stat-val">+880.1億円</span></div><div class="if-stat if-buy"><span class="if-stat-label">信託銀行</span><span class="if-stat-val">+731.7億円</span></div></div>
   <div class="if-comment">海外投資家が3,572.2億円の売り越しに転換。個人（+880.1億円）・信託銀行（+731.7億円）は買い越しで下支えする構図。<br><br>月末のポジション調整の可能性もあり、この週単独では地合い転換と判断するには材料不足。<br><br>※投資判断は自己責任でお願いします。</div>
 </div>
-</div><div class="if-week" data-week="2026-05-22" style="display:none">
+
+<div class="if-alert-section">
+  <div class="if-alert-section-title">機関投資家 開示アラート（今週・ウォッチリスト該当）</div>
+  
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge">空売り新規</span>
+    <span class="if-alert-issuer">6268 ナブテスコ</span>
+  </div>
+  <div class="if-alert-detail">0.5%以上の報告なし → 空売り残高少しあり</div>
+  <div class="if-alert-detail">合計空売り比率 <b>1.16%</b>／報告: MERRILL LYNCH INTERNATIONAL</div>
+  <div class="if-alert-date">2026-05-28</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge if-alert-badge-short">空売り急増</span>
+    <span class="if-alert-issuer">6997 日本ケミコン</span>
+  </div>
+  <div class="if-alert-detail">空売り残高少しあり → 空売り残高多い</div>
+  <div class="if-alert-detail">合計空売り比率 <b>3.0%</b>／報告: モルガン・スタンレーMUFG証券株式会社</div>
+  <div class="if-alert-date">2026-05-28</div>
+</div>
+<div class="if-alert-card">
+  <div class="if-alert-head">
+    <span class="if-alert-badge">空売り新規</span>
+    <span class="if-alert-issuer">6754 アンリツ</span>
+  </div>
+  <div class="if-alert-detail">0.5%以上の報告なし → 空売り残高低め</div>
+  <div class="if-alert-detail">合計空売り比率 <b>0.51%</b>／報告: Citigroup Global Markets Limited</div>
+  <div class="if-alert-date">2026-05-26</div>
+</div>
+</div></div><div class="if-week" data-week="2026-05-22" style="display:none">
 <div class="if-card">
   <div class="if-card-title">2026-05-22 週（東証プライム・金額ベース）</div>
   <div class="if-stats"><div class="if-stat if-buy"><span class="if-stat-label">海外投資家</span><span class="if-stat-val">+4,642.9億円</span></div><div class="if-stat if-sell"><span class="if-stat-label">個人投資家</span><span class="if-stat-val">-1,454.2億円</span></div><div class="if-stat if-sell"><span class="if-stat-label">信託銀行</span><span class="if-stat-val">-2,073.4億円</span></div></div>
@@ -26367,7 +26568,7 @@ function ifSwitchWeek(w){
 .sr-pct { font-size: 15px; font-weight: 700; color: #e6e8ee; margin-top: 2px; }
 .sr-focus-label { font-size: 11px; color: #6f7688; margin: 8px 0 4px; }
 </style>
-<div style="margin:10px 0 4px;padding:12px 14px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;"><div style="font-size:12.5px;color:var(--muted);margin-bottom:8px;">🇺🇸 トランプ発言（直近24時間）<span style="color:var(--accent);"> 市場関連 5件</span><span style="color:var(--muted);"> ／ その他 8件</span></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 11:01</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">中国</span><a href="https://www.trumpstruth.org/statuses/40103" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Newly declassified documents show that over a period of years starting during the 2020 election cycle, the People’s Republic of China carrie…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 04:35</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">物価・景気</span><a href="https://www.trumpstruth.org/statuses/40101" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Such great news in June’s Inflation Numbers! Prices FELL by the most in a single month in over six years. The June CPI was below the forecas…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 04:30</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">関税</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">貿易</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">半導体</span><a href="https://www.trumpstruth.org/statuses/40098" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">For decades, horrible politicians allowed our Industrial Base to move overseas. Their Trade Policies encouraged Companies to find the cheape…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 04:24</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">関税</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">北米</span><a href="https://www.trumpstruth.org/statuses/40097" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">We are holding Canada responsible for the fact that they are not properly maintaining their Forests, and Brush therein, and the United State…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 04:15</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">欧州</span><a href="https://www.trumpstruth.org/statuses/40096" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">It was my Honor to welcome now Senator Darline Graham Nordone (The sister of the Late, Great Lindsey Graham!), from the Wonderful State of S…</a></div><div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--line);"></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 11:18</span><a href="https://www.trumpstruth.org/statuses/40105" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Tim Sheehy is GREAT. A Winner!!! President DJT</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 11:13</span><a href="https://www.trumpstruth.org/statuses/40104" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Ensuring the integrity of our elections is fundamental to preserving trust in American democracy. Following the 2020 presidential election, …</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 10:59</span><a href="https://www.trumpstruth.org/statuses/40102" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">For many years, I have called for bold, swift, and decisive action to protect the integrity of America’s elections. Every American deserves …</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 04:32</span><a href="https://www.trumpstruth.org/statuses/40099" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">BIG WIN in Court for the American People! The so-called &quot;Digital Equity Act,&quot; a Biden DEI law, was ruled exactly what I said it was last yea…</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/17 22:46</span><a href="https://www.trumpstruth.org/statuses/40094" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">The Reflecting Pool, so badly damaged by Deranged Vandals, has been emptied as the massive slash gets repaired. We got it through the great …</a></div><div style="font-size:11px;color:var(--muted);margin-top:4px;">ほか 3 件</div><div style="font-size:10.5px;color:var(--muted);margin-top:8px;">※市場への影響は自動判定していません。ラベルは話題の目安・材料の見落とし防止用です。</div></div>
+<div style="margin:10px 0 4px;padding:12px 14px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;"><div style="font-size:12.5px;color:var(--muted);margin-bottom:8px;">🇺🇸 トランプ発言（直近24時間）<span style="color:var(--accent);"> 市場関連 1件</span><span style="color:var(--muted);"> ／ その他 3件</span></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--ink);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 11:01</span><span style="font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:1px 6px;margin-right:4px;">中国</span><a href="https://www.trumpstruth.org/statuses/40103" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Newly declassified documents show that over a period of years starting during the 2020 election cycle, the People’s Republic of China carrie…</a></div><div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--line);"></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 11:18</span><a href="https://www.trumpstruth.org/statuses/40105" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Tim Sheehy is GREAT. A Winner!!! President DJT</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 11:13</span><a href="https://www.trumpstruth.org/statuses/40104" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">Ensuring the integrity of our elections is fundamental to preserving trust in American democracy. Following the 2020 presidential election, …</a></div><div style="font-size:12px;line-height:1.55;margin:6px 0;color:var(--muted);"><span style="color:var(--muted);font-size:11px;margin-right:6px;">07/18 10:59</span><a href="https://www.trumpstruth.org/statuses/40102" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:none;">For many years, I have called for bold, swift, and decisive action to protect the integrity of America’s elections. Every American deserves …</a></div><div style="font-size:10.5px;color:var(--muted);margin-top:8px;">※市場への影響は自動判定していません。ラベルは話題の目安・材料の見落とし防止用です。</div></div>
 <style>
 .kabu-news{padding:14px 0 6px;margin:6px 0 0;color:#cdd6e0;font-family:inherit;}
 .kabu-news .nh b{font-size:16px;font-weight:600;color:#e6edf3;letter-spacing:.02em;}
@@ -26388,7 +26589,7 @@ function ifSwitchWeek(w){
  font-size:11px;color:#6e7681;line-height:1.5;}
 .kabu-news .none{font-size:13px;color:#8b949e;padding:8px 0;}
 </style>
-<section class="kabu-news"><div class="nh"><b>注目ニュース</b></div><div class="rule"></div><div class="leg">主要メディアの見出しを横断（出典＝各社）。見出し＋出典のみ・本文は各社サイトで。</div><a class="row" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE15aEFFTnViU1Q4SklfdmZzdXF0dzJIU01PTmR1WUFMTWd6ZGVpdnVheERsWEwtVDFXX2NRdHJVbzNNalE1VkFybTdiSWdXSEdsZ0HSAVRBVV95cUxNMEJrclJLNFpxcHk0bU9NNFg5OFFRVjA0MG9NU05Rc2wyZkNvYWRCcHFSelFLOVZMZUV0d3JmV3haN1Q1ZTZENVB6b1lsRG1FZElIa2M?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">AFPBB News</span><span class="tag">#半導体</span><span class="time">2時間前</span></span><span class="head">韓国サムスン電子、半導体82職種で経験者採用　HBM需要拡大に対応 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFAxZHRwc1VLMjBGSFFMa3dzZzFHcTcyYWZLQUxBMVFpRU5iVVhkVWdHc2JxMUMyakJQRWJscW9GMTlsWmNjT254X1dpaS1YNGE0SnRicEZ0SFBub0VhUFE?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">小田原箱根経済新聞</span><span class="tag">#関税</span><span class="time">3時間前</span></span><span class="head">カナダ山火事で関税上乗せ要求 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE51YVM4QlItMVI1UUlKeGU0a1loUE5VcUUzNmZMR0p5M0hHeXBBM3otNzVqNGVXbHVsUWJta0JYeHBxd0FIZFBuSkNxTnljWEd3UFotUFVxcW4?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">上毛新聞電子版</span><span class="tag">#日経平均</span><span class="time">3時間前</span></span><span class="head">日経平均株価が大幅続落 「調整局面」「来週以降の動きに注目」…群馬県内の経済関係者は冷静な受け止め <span class="ar">&#8599;</span></span></a><a class="row" href="https://toyokeizai.net/articles/-/950678?utm_source=rss&amp;utm_medium=http&amp;utm_campaign=link_back" target="_blank" rel="noopener"><span class="meta"><span class="chip">東洋経済</span><span class="tag">#東洋経済</span><span class="time">3時間前</span></span><span class="head">｢子4人＋犬猫と暮らす家｣ついに&quot;魔窟部屋&quot;を片付けると決意した日…漫画『私だけが頑張る片付けはもうごめんだ』第1話 | ライフ | 東洋経済オンライン <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rV2FSbXBGU1BSWF9hR2Z4SXFYaXQwUVZTQk1zMlQ3clJtTUxSb2FIOUNwSl9sWnpDZnJVUjZuN0p4TUo4S3J4QnhHTFE3aTNVOERRRTZwZmxwSlA0QzZz?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">mbp-japan.com</span><span class="tag">#FRB金利</span><span class="time">3時間前</span></span><span class="head">金相場価格デイリーコメント週間まとめ（7/13〜7/17）｜水野崇 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tRmFPUkNqMjIwVERkYzByY2g2SWRHRVVMTklueDNVMEtvNFhLejJvNV9uWFRjVTYtSzBURllhQWxjNG1vYXk5anZBQnp3c2RXTERLZXNfa3hvYUdTNjF2djNn?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">読売新聞</span><span class="tag">#防衛</span><span class="time">3時間前</span></span><span class="head">対イラン軍事作戦拡大の可能性、地下核施設への攻撃検討か…空中給油機をイスラエルに増派方針 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9iV0N2bVp2Nld0cmJKQkRaY2NaLUVibl9aZG1oVUhNWXB4WlJQVGExUS1aXy1jQUtVSlhxcjV3LXR0bGtYSWM2SnRYby1wNDA?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">newscast.jp</span><span class="tag">#半導体</span><span class="time">3時間前</span></span><span class="head">半導体製造装置用ボールねじの世界市場（2026年～2032年）、市場規模（内循環ボールねじ、外循環ボールねじ）・分析レポートを発表 <span class="ar">&#8599;</span></span></a><a class="row" href="https://toyokeizai.net/articles/-/951608?utm_source=rss&amp;utm_medium=http&amp;utm_campaign=link_back" target="_blank" rel="noopener"><span class="meta"><span class="chip">東洋経済</span><span class="tag">#東洋経済</span><span class="time">3時間前</span></span><span class="head">森にいるだけで免疫が強化される…？　｢森林浴｣がもたらす驚異的な効果　｢抗がんタンパク質｣が48％増加した例も | ライフ | 東洋経済オンライン <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5TWTM4Z0EtTmx6VmVVQm1nY1RNblp1bVlvdTVmdlA1ckdnSEtub0N3LTBVc2I4RldOVDYyZkhBRllXSXNaeUMwMWt3dDhoWHI4S2hxR3Noc0RnWVZJUWRBaFNtaW9EZ0k3Ukx6bURMdlZMUWxr?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#日経平均</span><span class="time">3時間前</span></span><span class="head">日経平均、一時2900円超の急落で6万4000円割れ 信用買い残の重荷が需給悪化に拍車 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51LVVmVVV6VFByYjVGOW5UeHJqQUFMSXZCSV9rVmRvTzlzUEhkWVIxYl93d1V5OFFXMlpyUl9OT2tnZVdOeFFuczVIZ1NzSl9Ta09ZaV9Pd1VUUTVsamM1QnVCZERMWms?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">朝日新聞</span><span class="tag">#半導体</span><span class="time">3時間前</span></span><span class="head">アップル、日本でiPhone1割値上げ 円安や半導体高騰が理由か <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE1GWWJpUXBoTjFDdTM0VVhQSW9obTJDR015TFpzOE8xck1wbHBUTGk4VkhWNjFyUkhVd3B2LXhvOHZ6LVdlQ0UzS2ZvbHAxLS16VjkzMF82b1J6XzIxUGs1Slhvb0c?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">時事ドットコム</span><span class="tag">#関税</span><span class="time">3時間前</span></span><span class="head">画像・写真：カナダ山火事で関税上乗せ要求：時事ドットコム <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VeXF6V1RsWGI2Qi1hZXRMdFdZUW1RQ1dhZ2M0cEN5OXJjZllQVWdjYm1HM2tSMTVpckM2TVBqUEJVVUJCNW90Mm10Q08zaGhHQTV6VQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">時事通信ニュース</span><span class="tag">#関税</span><span class="time">4時間前</span></span><span class="head">◎カナダ山火事で関税上乗せ要求 <span class="ar">&#8599;</span></span></a><a class="row" href="https://toyokeizai.net/articles/-/951155?utm_source=rss&amp;utm_medium=http&amp;utm_campaign=link_back" target="_blank" rel="noopener"><span class="meta"><span class="chip">東洋経済</span><span class="tag">#東洋経済</span><span class="time">4時間前</span></span><span class="head">｢信長死んじゃったけどどうする…？｣織田の家臣がひよるなかで秀吉が下した&quot;大きな決断&quot; | キャリア・教育 | 東洋経済オンライン <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE16eE80VWpWWE5WZksyOWNqM2dmdUtiaFJoaXRQSkYzVUpVQ3JjWUh2WnJUWHB1QkpFeFV4YVRMOG10NUdlZjhRTE9OV0dubUJWV1ctUDlWVDJjWDA?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Mshale</span><span class="tag">#生成AI</span><span class="time">4時間前</span></span><span class="head">JX金属決算後暴落最悪のシナリオ完全解説①18日が本当に大事な理由 Baftas 2026 (5CgIzmomvX) <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1PdHh4amNYeU81QTZGUGUtNTBTVjR3U0JOUW1lWlRfRzU2YXc0VEx6cVBtLVA0MWNEZUJWYzR0Y05HLW11TDlCYVVnTHRDekh5Q0J0VkRHSnktQzhxRzBF?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">NHKニュース</span><span class="tag">#関税</span><span class="time">4時間前</span></span><span class="head">米グリア通商代表 日本など対象の新関税措置“結論に数週間” <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOY1FRYllzUnhTbVNNWmRjNGRWblkwdXVGV1RwT0xIajZCUHVqajFEZHFidXl0eHA4NEcyeGdFQ19YUFJPOGdqWnhIS3dEZng1aTMtLXpMRk9OaVVCWWI0SVdwRVJBTW9WeE1tdjVPV2Y4SGQ5X2p4Znd2WUtUZk93VDhvMXFXMmNXTndPQ1NtQVc3Q0RTTXJvQzc0VVFjdTc5eUx3WUFOdEFVSXYxOFE?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">ig.com</span><span class="tag">#半導体</span><span class="time">4時間前</span></span><span class="head">アメリカ株、決算ショック懸念深まる SP500週次反落 半導体株急落継続 <span class="ar">&#8599;</span></span></a><a class="row" href="https://toyokeizai.net/articles/-/950360?utm_source=rss&amp;utm_medium=http&amp;utm_campaign=link_back" target="_blank" rel="noopener"><span class="meta"><span class="chip">東洋経済</span><span class="tag">#東洋経済</span><span class="time">4時間前</span></span><span class="head">｢京大に首席合格した著者｣｢科学的エビデンス｣東大生が読んでいる&quot;本質的な勉強法がわかる本&quot;3冊 | キャリア・教育 | 東洋経済オンライン <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1DVlZaMXJVNHNCS0lsdUFwYkpVQnFIZG54YjVZaG9QVDFKclgwM2g4dmJSbUpwLTJvNURvbW0xX0ZJWXpjSy1tb1Bja0NMRjVWT0NqR0N5M3hTOS04VV93U25vV29paklvblE3UTNfc29IQjdBdlhv?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Bloomberg.com</span><span class="tag">#半導体株安</span><span class="time">5時間前</span></span><span class="head">「DeepSeekショック」再来を警戒－半導体株指数、最高値から20%下落 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCajdJVWNKaG04R2JYbWNONHJmQy1XVUw2UFBaRUlybndlVW56WVhNSVFjbkVZYXBBdnJYV3lCeWtBV0FRTlF6SkQySGVWUHZaNG1mT3RKTElLdw?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">日本経済新聞</span><span class="tag">#日経平均</span><span class="time">5時間前</span></span><span class="head">日経平均先物って何？ 相場を動かす「もう１つの市場」を知る <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1pZk93UXhiaXQ3a0lvTEgyQnowS0tKaTlBQ2RqdmtETk90T1QxLVpJRGU2TFQ1TW9LcE1uakJTaVVqNkYxYUEzUGdPclJCdHFaZHBBT1l3?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">QUICK Money World</span><span class="tag">#円相場</span><span class="time">5時間前</span></span><span class="head">｢円相場の凪｣と｢バリュー回帰｣－－米国株安でも日経先物夜間１％高の整合性 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9qY09LY0xwSDQtcm9yRUhQZkZPUHNET25TVGp5TFd5TERKczNhdWdFZHZuQWJ3MUZzRVQtNllSTU9oUGt4aUVDdF85ZWhGNDZwQmt4RHVzdDl1NnpDcXp1SmJva2ZVN0hBazQ3dUhpRDRlN2Rh?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#円相場</span><span class="time">5時間前</span></span><span class="head">NY円、162円台前半で膠着 原油高と介入警戒が交錯 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1sX09qcnlFMzNCeHZJS3YtMEN3MnotWjF1YmZEZ0pSYWpEM2lDVmlvYk43UFVYTDVMOHpYVXJjZEZSWDJpaGJlZTdrX1FFTjhCT1Fxa0htazRCcnlLcEVtaThXbE5KSWpBaUFfQmx6WjN4cTls?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#半導体株安</span><span class="time">5時間前</span></span><span class="head">チップ株売りが続きフィラデルフィア半導体指数が弱気相場入り、米イラン衝突激化でブレント原油が88ドル突破 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE9hdG5MTTNzRlU2TmRNWk55UHJTb3NlbXlWS0p3MWc3Yk56RF9TT0NTN0F1OVF0eThUX1Q3d3RXaEdYb2NJbXBmUDFYcHA?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">ダイヤモンド・オンライン</span><span class="tag">#AI</span><span class="time">5時間前</span></span><span class="head">中国のムーンショットAI、最新モデルが投資家懸念を増幅 | The Wall Street Journal発 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ka0pNSURBU3o1em4zTU1nYXpQV1YzSUFXdUdKb2JUOEFSY0tzVzg5Sk1UdE9WT3k0NDc1UzFXMFQzcFZRNWNheC1tNFprR1NzcTdESVBhMHRqMXo1RkFpdzFWVktuQQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">テレ東BIZ</span><span class="tag">#日経平均</span><span class="time">6時間前</span></span><span class="head">日経平均が大幅安… AI・半導体相場の見通しは?【フォワードルッキング完全版】｜モーサテサタデー <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5vUDhOWXc4UTBsU0hvNTBuaWZSMWV3a2IyeW1iWThaMzhQRTZvLWFHb3hPRTIyRnpUQURZRFROeEhqc2tKRTZ0UEhkblYxSElQZXZESFU3MEh0ZWdmaTNieFdldnlJVmtOX0RHZmxqSnJtbjR6?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#FRB金利</span><span class="time">6時間前</span></span><span class="head">米イラン衝突でインフレ悪夢再燃、金は週間2.6%安で4000ドルの大台割れ <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFByb3ZpVFJSVDVhSE9vWkR6eUc3T056c3JSYThESVpOTHB5aUJKSzBWcDZmM0lUME5VYVU3ZlJScmVsOWtOV19rQXlrVmJpb0ttNmNtWlFiWlJZQVVndWRKUGxmQzNBSjlnV3dYN1JFNWVQV3ot?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#資金移動</span><span class="time">6時間前</span></span><span class="head">韓国KOSPI大型株20%暴落も中小型株は底堅く…1カ月で明暗逆転 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiS0FVX3lxTFBrSS1haVlKZWtXalBIVVNmbFZKTlJlM1Q5RG9HMnYyMjlScjRZaWxsSTRGWm9BSkkycWV0bmltWHUxS1pwXzBaOVFUNA?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">47NEWS</span><span class="tag">#円相場</span><span class="time">6時間前</span></span><span class="head">NY円、162円台前半 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9XaEloZ2t4TVE4Y2wwRm9CVUhyaUNtdmlaem5WX1pzSDVoWmdHYnlDNE9fb1c2Qmh5MWhzNlNudVk4Q1pTaWFubl9ydU1WeW5hcC0tTVoxUEM4WVRiQVM3RXJVU0h3X2VmblBYMThJMHBjbnNj?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">テレ東BIZ</span><span class="tag">#FRB金利</span><span class="time">6時間前</span></span><span class="head">日米金利の分岐点 【モーサテサタデープレミアム】＃301 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9qTnZtWTVvV3Y4WDA5Q3R1UU9zcWluR1pIcW1YdklPMUh5c1l5QS1TYTFBbDdaM2NTWFBiNVpETERtSjQtVTYxUDdJb1IxWkxCNGh3SzRUUUtQVjRyN1hWSXBkcTl1QQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">동아일보</span><span class="tag">#半導体株安</span><span class="time">6時間前</span></span><span class="head">「ピークアウト」の恐怖が半導体を直撃 株価軒並み急落 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1US2dkVXNYeTEySlFDYzQ5cTk0dUQ3RVY2eXZKZlFGbEp2MXN5ckFFMjVNZFhJNGkxaEF4RE1TbTBJam5zMUdoaVlNekV2LUNDRjV3bHJQVXc0ek4yWl9lYzc0TDN0Zw?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Межа. Новини України.</span><span class="tag">#AI</span><span class="time">6時間前</span></span><span class="head">半導体株が急落、AI過熱とレバレッジ懸念が投資家に警戒を促す <span class="ar">&#8599;</span></span></a><div class="foot">数値はカードが正・本紙は読み物／投資は自己判断</div></section><p class="meta">candidate_ranking_simple_20260718_120929.csv &nbsp;·&nbsp; 2026-07-18 &nbsp;·&nbsp; 10件</p><div class="cards" id="cardgrid">
+<section class="kabu-news"><div class="nh"><b>注目ニュース</b></div><div class="rule"></div><div class="leg">主要メディアの見出しを横断（出典＝各社）。見出し＋出典のみ・本文は各社サイトで。</div><a class="row" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE15aEFFTnViU1Q4SklfdmZzdXF0dzJIU01PTmR1WUFMTWd6ZGVpdnVheERsWEwtVDFXX2NRdHJVbzNNalE1VkFybTdiSWdXSEdsZ0HSAVRBVV95cUxNMEJrclJLNFpxcHk0bU9NNFg5OFFRVjA0MG9NU05Rc2wyZkNvYWRCcHFSelFLOVZMZUV0d3JmV3haN1Q1ZTZENVB6b1lsRG1FZElIa2M?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">AFPBB News</span><span class="tag">#半導体</span><span class="time">18時間前</span></span><span class="head">韓国サムスン電子、半導体82職種で経験者採用　HBM需要拡大に対応 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFAxZHRwc1VLMjBGSFFMa3dzZzFHcTcyYWZLQUxBMVFpRU5iVVhkVWdHc2JxMUMyakJQRWJscW9GMTlsWmNjT254X1dpaS1YNGE0SnRicEZ0SFBub0VhUFE?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">小田原箱根経済新聞</span><span class="tag">#関税</span><span class="time">18時間前</span></span><span class="head">カナダ山火事で関税上乗せ要求 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE51YVM4QlItMVI1UUlKeGU0a1loUE5VcUUzNmZMR0p5M0hHeXBBM3otNzVqNGVXbHVsUWJta0JYeHBxd0FIZFBuSkNxTnljWEd3UFotUFVxcW4?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">上毛新聞電子版</span><span class="tag">#日経平均</span><span class="time">18時間前</span></span><span class="head">日経平均株価が大幅続落 「調整局面」「来週以降の動きに注目」…群馬県内の経済関係者は冷静な受け止め <span class="ar">&#8599;</span></span></a><a class="row" href="https://toyokeizai.net/articles/-/950678?utm_source=rss&amp;utm_medium=http&amp;utm_campaign=link_back" target="_blank" rel="noopener"><span class="meta"><span class="chip">東洋経済</span><span class="tag">#東洋経済</span><span class="time">18時間前</span></span><span class="head">｢子4人＋犬猫と暮らす家｣ついに&quot;魔窟部屋&quot;を片付けると決意した日…漫画『私だけが頑張る片付けはもうごめんだ』第1話 | ライフ | 東洋経済オンライン <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rV2FSbXBGU1BSWF9hR2Z4SXFYaXQwUVZTQk1zMlQ3clJtTUxSb2FIOUNwSl9sWnpDZnJVUjZuN0p4TUo4S3J4QnhHTFE3aTNVOERRRTZwZmxwSlA0QzZz?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">mbp-japan.com</span><span class="tag">#FRB金利</span><span class="time">18時間前</span></span><span class="head">金相場価格デイリーコメント週間まとめ（7/13〜7/17）｜水野崇 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tRmFPUkNqMjIwVERkYzByY2g2SWRHRVVMTklueDNVMEtvNFhLejJvNV9uWFRjVTYtSzBURllhQWxjNG1vYXk5anZBQnp3c2RXTERLZXNfa3hvYUdTNjF2djNn?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">読売新聞</span><span class="tag">#防衛</span><span class="time">19時間前</span></span><span class="head">対イラン軍事作戦拡大の可能性、地下核施設への攻撃検討か…空中給油機をイスラエルに増派方針 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9iV0N2bVp2Nld0cmJKQkRaY2NaLUVibl9aZG1oVUhNWXB4WlJQVGExUS1aXy1jQUtVSlhxcjV3LXR0bGtYSWM2SnRYby1wNDA?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">newscast.jp</span><span class="tag">#半導体</span><span class="time">19時間前</span></span><span class="head">半導体製造装置用ボールねじの世界市場（2026年～2032年）、市場規模（内循環ボールねじ、外循環ボールねじ）・分析レポートを発表 <span class="ar">&#8599;</span></span></a><a class="row" href="https://toyokeizai.net/articles/-/951608?utm_source=rss&amp;utm_medium=http&amp;utm_campaign=link_back" target="_blank" rel="noopener"><span class="meta"><span class="chip">東洋経済</span><span class="tag">#東洋経済</span><span class="time">19時間前</span></span><span class="head">森にいるだけで免疫が強化される…？　｢森林浴｣がもたらす驚異的な効果　｢抗がんタンパク質｣が48％増加した例も | ライフ | 東洋経済オンライン <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5TWTM4Z0EtTmx6VmVVQm1nY1RNblp1bVlvdTVmdlA1ckdnSEtub0N3LTBVc2I4RldOVDYyZkhBRllXSXNaeUMwMWt3dDhoWHI4S2hxR3Noc0RnWVZJUWRBaFNtaW9EZ0k3Ukx6bURMdlZMUWxr?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#日経平均</span><span class="time">19時間前</span></span><span class="head">日経平均、一時2900円超の急落で6万4000円割れ 信用買い残の重荷が需給悪化に拍車 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51LVVmVVV6VFByYjVGOW5UeHJqQUFMSXZCSV9rVmRvTzlzUEhkWVIxYl93d1V5OFFXMlpyUl9OT2tnZVdOeFFuczVIZ1NzSl9Ta09ZaV9Pd1VUUTVsamM1QnVCZERMWms?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">朝日新聞</span><span class="tag">#半導体</span><span class="time">19時間前</span></span><span class="head">アップル、日本でiPhone1割値上げ 円安や半導体高騰が理由か <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE1GWWJpUXBoTjFDdTM0VVhQSW9obTJDR015TFpzOE8xck1wbHBUTGk4VkhWNjFyUkhVd3B2LXhvOHZ6LVdlQ0UzS2ZvbHAxLS16VjkzMF82b1J6XzIxUGs1Slhvb0c?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">時事ドットコム</span><span class="tag">#関税</span><span class="time">19時間前</span></span><span class="head">画像・写真：カナダ山火事で関税上乗せ要求：時事ドットコム <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VeXF6V1RsWGI2Qi1hZXRMdFdZUW1RQ1dhZ2M0cEN5OXJjZllQVWdjYm1HM2tSMTVpckM2TVBqUEJVVUJCNW90Mm10Q08zaGhHQTV6VQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">時事通信ニュース</span><span class="tag">#関税</span><span class="time">19時間前</span></span><span class="head">◎カナダ山火事で関税上乗せ要求 <span class="ar">&#8599;</span></span></a><a class="row" href="https://toyokeizai.net/articles/-/951155?utm_source=rss&amp;utm_medium=http&amp;utm_campaign=link_back" target="_blank" rel="noopener"><span class="meta"><span class="chip">東洋経済</span><span class="tag">#東洋経済</span><span class="time">19時間前</span></span><span class="head">｢信長死んじゃったけどどうする…？｣織田の家臣がひよるなかで秀吉が下した&quot;大きな決断&quot; | キャリア・教育 | 東洋経済オンライン <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE16eE80VWpWWE5WZksyOWNqM2dmdUtiaFJoaXRQSkYzVUpVQ3JjWUh2WnJUWHB1QkpFeFV4YVRMOG10NUdlZjhRTE9OV0dubUJWV1ctUDlWVDJjWDA?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Mshale</span><span class="tag">#生成AI</span><span class="time">19時間前</span></span><span class="head">JX金属決算後暴落最悪のシナリオ完全解説①18日が本当に大事な理由 Baftas 2026 (5CgIzmomvX) <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1PdHh4amNYeU81QTZGUGUtNTBTVjR3U0JOUW1lWlRfRzU2YXc0VEx6cVBtLVA0MWNEZUJWYzR0Y05HLW11TDlCYVVnTHRDekh5Q0J0VkRHSnktQzhxRzBF?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">NHKニュース</span><span class="tag">#関税</span><span class="time">19時間前</span></span><span class="head">米グリア通商代表 日本など対象の新関税措置“結論に数週間” <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOY1FRYllzUnhTbVNNWmRjNGRWblkwdXVGV1RwT0xIajZCUHVqajFEZHFidXl0eHA4NEcyeGdFQ19YUFJPOGdqWnhIS3dEZng1aTMtLXpMRk9OaVVCWWI0SVdwRVJBTW9WeE1tdjVPV2Y4SGQ5X2p4Znd2WUtUZk93VDhvMXFXMmNXTndPQ1NtQVc3Q0RTTXJvQzc0VVFjdTc5eUx3WUFOdEFVSXYxOFE?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">ig.com</span><span class="tag">#半導体</span><span class="time">19時間前</span></span><span class="head">アメリカ株、決算ショック懸念深まる SP500週次反落 半導体株急落継続 <span class="ar">&#8599;</span></span></a><a class="row" href="https://toyokeizai.net/articles/-/950360?utm_source=rss&amp;utm_medium=http&amp;utm_campaign=link_back" target="_blank" rel="noopener"><span class="meta"><span class="chip">東洋経済</span><span class="tag">#東洋経済</span><span class="time">20時間前</span></span><span class="head">｢京大に首席合格した著者｣｢科学的エビデンス｣東大生が読んでいる&quot;本質的な勉強法がわかる本&quot;3冊 | キャリア・教育 | 東洋経済オンライン <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1DVlZaMXJVNHNCS0lsdUFwYkpVQnFIZG54YjVZaG9QVDFKclgwM2g4dmJSbUpwLTJvNURvbW0xX0ZJWXpjSy1tb1Bja0NMRjVWT0NqR0N5M3hTOS04VV93U25vV29paklvblE3UTNfc29IQjdBdlhv?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Bloomberg.com</span><span class="tag">#半導体株安</span><span class="time">20時間前</span></span><span class="head">「DeepSeekショック」再来を警戒－半導体株指数、最高値から20%下落 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCajdJVWNKaG04R2JYbWNONHJmQy1XVUw2UFBaRUlybndlVW56WVhNSVFjbkVZYXBBdnJYV3lCeWtBV0FRTlF6SkQySGVWUHZaNG1mT3RKTElLdw?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">日本経済新聞</span><span class="tag">#日経平均</span><span class="time">20時間前</span></span><span class="head">日経平均先物って何？ 相場を動かす「もう１つの市場」を知る <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1pZk93UXhiaXQ3a0lvTEgyQnowS0tKaTlBQ2RqdmtETk90T1QxLVpJRGU2TFQ1TW9LcE1uakJTaVVqNkYxYUEzUGdPclJCdHFaZHBBT1l3?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">QUICK Money World</span><span class="tag">#円相場</span><span class="time">20時間前</span></span><span class="head">｢円相場の凪｣と｢バリュー回帰｣－－米国株安でも日経先物夜間１％高の整合性 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9qY09LY0xwSDQtcm9yRUhQZkZPUHNET25TVGp5TFd5TERKczNhdWdFZHZuQWJ3MUZzRVQtNllSTU9oUGt4aUVDdF85ZWhGNDZwQmt4RHVzdDl1NnpDcXp1SmJva2ZVN0hBazQ3dUhpRDRlN2Rh?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#円相場</span><span class="time">21時間前</span></span><span class="head">NY円、162円台前半で膠着 原油高と介入警戒が交錯 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1sX09qcnlFMzNCeHZJS3YtMEN3MnotWjF1YmZEZ0pSYWpEM2lDVmlvYk43UFVYTDVMOHpYVXJjZEZSWDJpaGJlZTdrX1FFTjhCT1Fxa0htazRCcnlLcEVtaThXbE5KSWpBaUFfQmx6WjN4cTls?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#半導体株安</span><span class="time">21時間前</span></span><span class="head">チップ株売りが続きフィラデルフィア半導体指数が弱気相場入り、米イラン衝突激化でブレント原油が88ドル突破 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE9hdG5MTTNzRlU2TmRNWk55UHJTb3NlbXlWS0p3MWc3Yk56RF9TT0NTN0F1OVF0eThUX1Q3d3RXaEdYb2NJbXBmUDFYcHA?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">ダイヤモンド・オンライン</span><span class="tag">#AI</span><span class="time">21時間前</span></span><span class="head">中国のムーンショットAI、最新モデルが投資家懸念を増幅 | The Wall Street Journal発 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ka0pNSURBU3o1em4zTU1nYXpQV1YzSUFXdUdKb2JUOEFSY0tzVzg5Sk1UdE9WT3k0NDc1UzFXMFQzcFZRNWNheC1tNFprR1NzcTdESVBhMHRqMXo1RkFpdzFWVktuQQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">テレ東BIZ</span><span class="tag">#日経平均</span><span class="time">21時間前</span></span><span class="head">日経平均が大幅安… AI・半導体相場の見通しは?【フォワードルッキング完全版】｜モーサテサタデー <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5vUDhOWXc4UTBsU0hvNTBuaWZSMWV3a2IyeW1iWThaMzhQRTZvLWFHb3hPRTIyRnpUQURZRFROeEhqc2tKRTZ0UEhkblYxSElQZXZESFU3MEh0ZWdmaTNieFdldnlJVmtOX0RHZmxqSnJtbjR6?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#FRB金利</span><span class="time">21時間前</span></span><span class="head">米イラン衝突でインフレ悪夢再燃、金は週間2.6%安で4000ドルの大台割れ <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFByb3ZpVFJSVDVhSE9vWkR6eUc3T056c3JSYThESVpOTHB5aUJKSzBWcDZmM0lUME5VYVU3ZlJScmVsOWtOV19rQXlrVmJpb0ttNmNtWlFiWlJZQVVndWRKUGxmQzNBSjlnV3dYN1JFNWVQV3ot?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">BigGo ファイナンス</span><span class="tag">#資金移動</span><span class="time">21時間前</span></span><span class="head">韓国KOSPI大型株20%暴落も中小型株は底堅く…1カ月で明暗逆転 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiS0FVX3lxTFBrSS1haVlKZWtXalBIVVNmbFZKTlJlM1Q5RG9HMnYyMjlScjRZaWxsSTRGWm9BSkkycWV0bmltWHUxS1pwXzBaOVFUNA?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">47NEWS</span><span class="tag">#円相場</span><span class="time">21時間前</span></span><span class="head">NY円、162円台前半 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9XaEloZ2t4TVE4Y2wwRm9CVUhyaUNtdmlaem5WX1pzSDVoWmdHYnlDNE9fb1c2Qmh5MWhzNlNudVk4Q1pTaWFubl9ydU1WeW5hcC0tTVoxUEM4WVRiQVM3RXJVU0h3X2VmblBYMThJMHBjbnNj?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">テレ東BIZ</span><span class="tag">#FRB金利</span><span class="time">21時間前</span></span><span class="head">日米金利の分岐点 【モーサテサタデープレミアム】＃301 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9qTnZtWTVvV3Y4WDA5Q3R1UU9zcWluR1pIcW1YdklPMUh5c1l5QS1TYTFBbDdaM2NTWFBiNVpETERtSjQtVTYxUDdJb1IxWkxCNGh3SzRUUUtQVjRyN1hWSXBkcTl1QQ?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">동아일보</span><span class="tag">#半導体株安</span><span class="time">22時間前</span></span><span class="head">「ピークアウト」の恐怖が半導体を直撃 株価軒並み急落 <span class="ar">&#8599;</span></span></a><a class="row" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1US2dkVXNYeTEySlFDYzQ5cTk0dUQ3RVY2eXZKZlFGbEp2MXN5ckFFMjVNZFhJNGkxaEF4RE1TbTBJam5zMUdoaVlNekV2LUNDRjV3bHJQVXc0ek4yWl9lYzc0TDN0Zw?oc=5" target="_blank" rel="noopener"><span class="meta"><span class="chip">Межа. Новини України.</span><span class="tag">#AI</span><span class="time">22時間前</span></span><span class="head">半導体株が急落、AI過熱とレバレッジ懸念が投資家に警戒を促す <span class="ar">&#8599;</span></span></a><div class="foot">数値はカードが正・本紙は読み物／投資は自己判断</div></section><p class="meta">candidate_ranking_simple_20260718_120929.csv &nbsp;·&nbsp; 2026-07-18 &nbsp;·&nbsp; 10件</p><div class="cards" id="cardgrid">
 <div class="card" data-judge="neutral" data-rank="1.0" data-score="10.0" data-change="3.64" data-risk="0" data-uwick="0" data-lwick="0" data-uw="1.49" data-lw="0.0" data-streak="" data-theme="" data-sector="小売">
   <div class="card-head">
     <div class="card-head-left">
@@ -31657,10 +31858,7 @@ function wtSwitchWeek(w){
 <div class="ev-card" style="border-left:3px solid var(--accent);"><div style="display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;"><b>セブン＆アイ・ホールディングス</b><span style="color:var(--muted);font-size:11px;font-family:ui-monospace,Menlo,monospace;">3382</span><span style="margin-left:auto;color:var(--muted);font-size:11px;">7/17 09:05</span></div><div style="margin-top:6px;font-size:13px;line-height:1.5;">一部報道について</div><div style="margin-top:6px;"><span class="ev-tag">要確認</span></div><div style="margin-top:6px;"><a href="https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120260717595525.pdf" target="_blank" rel="noopener" class="ev-tag" style="text-decoration:none;">TDnetで開く ↗</a></div></div>
 <div style="margin-top:12px;color:var(--muted);font-size:12px;">本日IR開示なし：185 銘柄</div>
 </section><section class="pane" id="events">
-<p class="meta">event_calendar.csv &nbsp;·&nbsp; 更新 2026-07-13 06:11</p>
-<div class="hist-date">7/17（金）</div>
-<div class="ev-card ev-card-sm"><span class="ev-time-sm">23:00</span><span class="ev-imp ev-imp-1">★</span><span class="ev-name-sm">米7月ミシガン大学消費者態度指数（速報）</span><span class="ev-tag">指標</span><span class="ev-tag">インフレ</span><div class="ev-note-sm">含まれる期待インフレ率は家計のインフレ予想を測る指標としてCPI・PPIとあわせて注目される</div></div>
-<div class="ev-card ev-card-sm"><span class="ev-time-sm">終日</span><span class="ev-imp ev-imp-1">★</span><span class="ev-name-sm">週末控え・ポジション調整注意</span><span class="ev-tag">地合い</span><span class="ev-tag">地合い</span><div class="ev-note-sm">週末を挟むため持ち高調整の動きが出やすい</div></div>
+<div class="empty">今週のイベントは未更新です（週末に更新）</div>
 </section><section class="pane" id="margin_ranking"><style>
 .mr-tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
 .mr-tab{padding:6px 14px;font-size:13px;border-radius:20px;cursor:pointer;white-space:nowrap;background:none;text-decoration:none;font-weight:500;
@@ -52836,7 +53034,7 @@ function wrSwitchWeek(w){
 </ol>
 <hr class="tips-hr">
 <p class="tips-note">本資料は投資判断のための学習・整理資料であり、特定銘柄の売買を推奨するものではありません。</p></div></details>
-</div></section><footer>generated 2026-07-18 15:02:18 · snapshot (read-only)</footer></div><script>function vt(a){var sec=a.parentNode.getAttribute('data-sec');var v=a.getAttribute('data-v');document.querySelectorAll('.vtoggle[data-sec="'+sec+'"] a').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-v')===v);});document.querySelectorAll('.subpane[data-sec="'+sec+'"]').forEach(function(p){if(p.getAttribute('data-v')===v){p.removeAttribute('data-hide');}else{p.setAttribute('data-hide','1');}});}</script>
+</div></section><footer>generated 2026-07-19 06:43:38 · snapshot (read-only)</footer></div><script>function vt(a){var sec=a.parentNode.getAttribute('data-sec');var v=a.getAttribute('data-v');document.querySelectorAll('.vtoggle[data-sec="'+sec+'"] a').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-v')===v);});document.querySelectorAll('.subpane[data-sec="'+sec+'"]').forEach(function(p){if(p.getAttribute('data-v')===v){p.removeAttribute('data-hide');}else{p.setAttribute('data-hide','1');}});}</script>
 <script>
 (function(){
   var ids=["daily_ranking","flow","buy","possession","caution","watch","ir","events","margin_ranking","ranking","splits","edinet","history","result","report","stocks","guide","tips"];
